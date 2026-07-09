@@ -431,3 +431,274 @@ We'll review it together.
 We'll make the Git commit **after** we complete the remaining parts of Day 2 (`const`, `var`, naming rules, and practice). This way, your commit will represent the complete work for the day.
 
 Answer the five questions and complete the assignment. Then we'll continue with **Part 2: How variables are stored in computer memory**.
+
+Excellent work! 🎉 I checked your screenshot, and everything is working correctly.
+
+## ✅ Output Verification
+
+Your terminal shows:
+
+```text
+Shagun
+34
+Hyderabad
+Shagun
+MERN Stack
+11
+2
+```
+
+✔ Node.js executed your `variables.js` file successfully.
+
+---
+
+## One Small Observation 👀
+
+Earlier, your assignment said:
+
+```javascript
+let age = 35;
+```
+
+But your output shows:
+
+```text
+34
+```
+
+This is **not a mistake**. It simply means you changed your age to **34** in the code, and that's perfectly fine. The important thing is that the program works.
+
+---
+
+# What You've Learned So Far
+
+Today, you've learned that:
+
+* ✅ A variable is a **named box** that stores data.
+* ✅ `let` is used to create variables.
+* ✅ `console.log()` prints values to the terminal.
+* ✅ Variables make applications **dynamic**.
+* ✅ Node.js executes JavaScript files.
+
+These are the building blocks of every JavaScript and MERN application.
+
+---
+
+# 🎉 Your GitHub Progress
+
+You should now have:
+
+```
+MERN-Bootcamp
+│
+└── 01-JavaScript
+      ├── app.js
+      └── variables.js
+```
+
+By the end of this bootcamp, you'll be able to look back at these first files and appreciate how far you've come.
+
+---
+
+# 🧠 Part 2 – How Variables Are Stored in Computer Memory
+
+This is one of the most important programming concepts. Don't worry if it feels new—we'll build it step by step.
+
+## Imagine Your Computer Has Thousands of Small Storage Boxes
+
+Think of your computer's memory (RAM) like this:
+
+```text
+Memory (RAM)
+
++-------+-------+-------+-------+-------+
+| Box 1 | Box 2 | Box 3 | Box 4 | Box 5 |
++-------+-------+-------+-------+-------+
+```
+
+These boxes are empty at first.
+
+---
+
+## Now You Write
+
+```javascript
+let age = 34;
+```
+
+JavaScript asks the computer:
+
+> "Please give me one empty box."
+
+The computer finds one.
+
+```text
+Memory (RAM)
+
++-------+-------+-------+-------+-------+
+| Empty |  34   | Empty | Empty | Empty |
++-------+-------+-------+-------+-------+
+            ▲
+         Variable "age"
+```
+
+Notice something important:
+
+The **computer stores only the value (`34`) in memory**.
+
+The **variable name (`age`) is how your program refers to that memory location**.
+
+So you can imagine it like this:
+
+```text
+age
+ │
+ ▼
++------+
+| 34   |
++------+
+```
+
+When you later write:
+
+```javascript
+console.log(age);
+```
+
+JavaScript thinks like this:
+
+1. Find the variable named `age`.
+2. Look at the value stored in its memory.
+3. Print that value.
+
+Output:
+
+```text
+34
+```
+
+---
+
+## Another Example
+
+```javascript
+let city = "Hyderabad";
+```
+
+Memory:
+
+```text
+city
+ │
+ ▼
++-------------+
+| Hyderabad   |
++-------------+
+```
+
+When you write:
+
+```javascript
+console.log(city);
+```
+
+JavaScript finds the value `"Hyderabad"` and prints it.
+
+---
+
+## Think Like a Bank
+
+Imagine a bank locker.
+
+```
+Locker Number → 101
+Contents      → Gold
+```
+
+You don't carry the gold everywhere—you just remember the **locker number**.
+
+Programming is similar.
+
+* Variable name = Locker number
+* Value = Gold inside the locker
+
+---
+
+## Mini Quiz (Don't Run the Code Yet)
+
+### Q1
+
+```javascript
+let name = "Shagun";
+```
+
+What is the **variable name**?
+
+a) `"Shagun"`
+
+b) `name`
+
+c) `let`
+
+---
+
+### Q2
+
+What value is stored in memory?
+
+```javascript
+let marks = 95;
+```
+
+a) `marks`
+
+b) `95`
+
+c) `let`
+
+---
+
+### Q3
+
+```javascript
+let city = "Delhi";
+
+console.log(city);
+```
+
+What happens first?
+
+a) JavaScript prints `"city"`.
+
+b) JavaScript looks for the variable `city`, gets its value, and prints it.
+
+c) JavaScript creates a new variable.
+
+---
+
+### Q4
+
+Draw the memory diagram for:
+
+```javascript
+let course = "MERN";
+```
+
+---
+
+### Q5 (Thinking Question)
+
+If you write:
+
+```javascript
+let age = 34;
+console.log(age);
+console.log(age);
+console.log(age);
+```
+
+Does JavaScript create **three different boxes** in memory or **one box that is used three times**? Explain why.
+
+---
+
+Take your time answering these. Understanding how memory works will make variables, objects, arrays, and functions much easier to learn later.
