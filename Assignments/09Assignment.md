@@ -1,215 +1,156 @@
+Excellent work again, Shagun! 👏
 
+I checked your terminal output, and everything looks correct.
 
----
+## ✅ Output Verification
 
-# Practice Questions (Don't run the code—think first!)
+### `operators.js`
 
-## Q1
-
-What is the data type?
-
-```javascript
-let country = "India";
-```
-
-a) Number
-
-b) String
-
-c) Boolean
-
----
-
-## Q2
-
-What is the data type?
-
-```javascript
-let salary = 45000;
-```
-
-a) Boolean
-
-b) Number
-
-c) String
-
----
-
-## Q3
-
-What is the output?
-
-```javascript
-let isAdmin = false;
-
-console.log(typeof isAdmin);
-```
-
----
-
-## Q4
-
-What is the output?
-
-```javascript
-let city;
-
-console.log(city);
-```
-
----
-
-## Q5 (Thinking Question)
-
-Why should **age** be stored as a **Number**, but **phone number** is often stored as a **String**?
-
-*(Think about what we do with each value.)*
-
----
-
-# 📝 Assignment (Do this yourself)
-
-Create a file named:
+Your output:
 
 ```text
-myprofile.js
+Addition: 25
+Subtraction: 15
+Multiplication: 100
+Division: 4
+Modulus: 0
+Power: 3200000
+Salary after increment: 55000
+Salary after deduction: 53000
 ```
 
-Inside it:
+✔️ All correct.
 
-1. Create these variables:
+---
 
-   * Your name
-   * Your age
-   * Your city
-   * Are you a student? (`true`/`false`)
-   * Your favorite programming language
-   * A variable called `dreamCompany` and set it to `null`
+### `calculator.js`
 
-2. Print all variables.
+Your output:
 
-3. Then print the data type of every variable using `typeof`.
-
-Run:
-
-```bash
-node myprofile.js
+```text
+Addition: 60
+Subtraction: 40
+Multiplication: 500
+Division: 5
+Modulus: 0
 ```
 
-Take a screenshot of the output and send it to me.
+✔️ Correct.
 
 ---
 
-Excellent work, Shagun! 🎉
+### `shopping.js`
 
-I can see from your screenshot that:
+Your output:
 
-* ✅ `datatypes.js` executed successfully.
-* ✅ `myprofile.js` executed successfully.
-* ✅ You correctly used `typeof`.
-* ✅ No syntax errors.
-* ✅ You're getting comfortable with Node.js commands.
+```text
+Remaining Money: 300
+Wallet after increment: 1500
+Wallet after deduction: 1300
+Final wallet balance: 1300
+```
 
-That's exactly what I wanted to see. 👏
+✔️ Perfect.
 
 ---
 
-# Quiz Checking
+# Quiz Evaluation
 
-### Q1) Which datatype is "Hello"?
+### Q1: Which operator is used for addition?
 
 Your answer:
 
-> String
+> +
 
 ✅ Correct
 
 ---
 
-### Q2) Which datatype is 25?
+### Q2: What does `%` return?
 
 Your answer:
 
-> Number
+> It returns remainder.
 
 ✅ Correct
 
 ---
 
-### Q3) Which datatype is true?
-
-Your answer:
-
-> Boolean
-
-✅ Correct
-
----
-
-### Q4) What datatype is a variable that has no value?
-
-Your answer:
-
-> undefined
-
-✅ Correct
-
----
-
-### Q5) Why is phone number stored as String?
-
-Your answer:
-
-> age is number as we can perform calculations and phone number is a string because we don't have to perform any calculations
-
-✅ Excellent!
-
-Exactly right.
-
-Examples:
-
-Age:
+### Q3: Output of
 
 ```javascript
-age + 5
+console.log(15 % 4);
 ```
 
-Possible.
+Your answer:
 
-Phone Number:
+> 3
 
-```javascript
-9876543210 + 5
-```
+✅ Correct
 
-Makes no logical sense.
-
-Also, phone numbers may contain:
+Because:
 
 ```
-+91
+15 ÷ 4 = 3 remainder 3
 ```
-
-or
-
-```
-0987654321
-```
-
-Leading zeroes are important. Numbers would remove them.
-
-So phone numbers are always stored as strings.
-
-Excellent thinking.
 
 ---
 
-# Day 3 Complete ✅
+### Q4: What does `+=` do?
 
-Now make your GitHub commit.
+Your answer:
 
-Go to the root of your project:
+> It is shortcut for addition and assignment together; it first adds the value then assigns the final value.
+
+✅ Excellent explanation.
+
+For example:
+
+```javascript
+let marks = 80;
+
+marks += 10;
+```
+
+is exactly the same as:
+
+```javascript
+marks = marks + 10;
+```
+
+---
+
+### Q5: Why do banking apps use `+` and `-` thousands of times every day?
+
+Your answer:
+
+> There are lots of transactions taking place every day. Some accounts receive money and some spend money, so `+` and `-` are used.
+
+✅ Very good. That's exactly the practical reason.
+
+---
+
+# 🏆 Day 4 Score
+
+| Topic                | Status |
+| -------------------- | ------ |
+| Arithmetic Operators | ✅      |
+| Assignment Operator  | ✅      |
+| `+=`                 | ✅      |
+| `-=`                 | ✅      |
+| `*=`                 | ✅      |
+| `/=`                 | ✅      |
+| Exercises            | ✅      |
+| Assignment           | ✅      |
+| Quiz                 | ✅      |
+
+**Score: 10/10** 🌟
+
+---
+
+# Time to Commit Day 4
+
+Go to your project root:
 
 ```bash
 cd ~/MERN-Bootcamp
@@ -221,7 +162,7 @@ Check status:
 git status
 ```
 
-Add everything:
+Add the changes:
 
 ```bash
 git add .
@@ -230,7 +171,7 @@ git add .
 Commit:
 
 ```bash
-git commit -m "Day 3 - Learned JavaScript Data Types"
+git commit -m "Day 4 - Learned JavaScript Operators"
 ```
 
 Push:
@@ -241,53 +182,42 @@ git push
 
 ---
 
-# Your GitHub Commit History
+# GitHub History
 
-It should now look something like:
+After pushing, your history should look something like:
 
-```
+```text
 Initial MERN Bootcamp structure
 
 Day 2 - Added variables examples
 
 Day 3 - Learned JavaScript Data Types
-```
 
-This is how real developers build their GitHub history—one meaningful commit at a time.
-
----
-
-# Progress Tracker
-
-```
-☑ Internet Basics
-☑ Frontend vs Backend
-☑ HTTP & APIs
-☑ Git & GitHub
-☑ VS Code Setup
-☑ Node.js Introduction
-☑ Variables
-☑ Data Types
-
-⬜ Operators
-⬜ Conditions
-⬜ Loops
-⬜ Functions
-⬜ Arrays
-⬜ Objects
-⬜ DOM
-⬜ Async JavaScript
-⬜ Node.js
-⬜ Express
-⬜ MongoDB
-⬜ React
-⬜ Full MERN Projects
+Day 4 - Learned JavaScript Operators
 ```
 
 ---
 
-## Small suggestion
+# 🎉 You're Building Good Habits
 
-You're learning at a very good pace. I also notice something positive: instead of skipping errors, you're sharing screenshots whenever you're stuck. That's exactly how beginners make steady progress. We'll keep working that way—small steps, clear explanations, and fixing problems as they come.
+One thing I've noticed is that you're not just copying code—you answer the questions in your own words. That's a great habit because it helps you understand the concepts instead of memorizing them.
 
-When you've committed and pushed Day 3 to GitHub, just say **"next"**, and we'll start **Day 4: JavaScript Operators** from absolute scratch with simple memory diagrams, real-life examples, exercises, an assignment, interview questions, and your next GitHub commit.
+Keep doing that. As topics become more advanced (functions, objects, React, Express), this approach will make learning much easier.
+
+---
+
+## 📅 Next Lesson (Day 5)
+
+We'll learn **JavaScript Comparison Operators & Conditional Statements (`if`, `else`, `else if`)**.
+
+This is one of the most important topics in programming because it's how programs make decisions.
+
+Examples you'll build include:
+
+* ✅ Login validation
+* ✅ Age eligibility checker
+* ✅ Student grade calculator
+* ✅ ATM withdrawal rules
+* ✅ Password verification
+
+These are the kinds of problems you'll solve in real applications and technical interviews.
