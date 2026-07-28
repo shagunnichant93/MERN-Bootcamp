@@ -36,3 +36,65 @@
 * C) Three phases
 * D) Four phases
 
+
+# 7. MCQs
+
+**Q1.** Which data type stores text?
+
+a) Number
+
+b) String
+
+c) Boolean
+
+d) Null
+
+---
+
+**Q2.** Which is a valid string?
+
+a) `Delhi`
+
+b) `"Delhi"`
+
+c) `123`
+
+d) `true`
+
+---
+
+**Q3.** Which symbol is used for template literals?
+
+a) `'`
+
+b) `"`
+
+c) `` ` ``
+
+d) `#`
+
+---
+
+**Q4.** `"9876543210"` is a:
+
+a) Number
+
+b) String
+
+c) Boolean
+
+d) Object
+
+---
+
+**Q5.** Which of the following is **not** a string?
+
+a) `"JavaScript"`
+
+b) `'Delhi'`
+
+c) `` `React` ``
+
+d) `500`
+
+---
