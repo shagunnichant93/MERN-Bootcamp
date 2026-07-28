@@ -98,3 +98,48 @@ c) `` `React` ``
 d) `500`
 
 ---
+
+# MCQs (5)
+
+**Q1.** `"Hello".length` returns:
+
+a) 4
+b) 5
+c) 6
+d) Error
+
+---
+
+**Q2.** `length` is a:
+
+a) Function
+b) Property
+c) Variable
+d) Loop
+
+---
+
+**Q3.** Which one has length **0**?
+
+a) `" "`
+b) `"A"`
+c) `""`
+d) `"0"`
+
+---
+
+**Q4.** Does `length` count spaces?
+
+a) No
+b) Yes
+
+---
+
+**Q5.** Which condition checks for a password of at least 8 characters?
+
+a) `password.length == 8`
+b) `password.length <= 8`
+c) `password.length >= 8`
+d) `password = 8`
+
+---

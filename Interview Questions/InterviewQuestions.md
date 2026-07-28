@@ -421,3 +421,50 @@ How can callbacks make this workflow cleaner?
 19. Why is a PIN or ZIP code often stored as a string?
 20. In an e-commerce app, list five values that should be strings.
 
+
+
+Answer these after completing the programs.
+
+1. What is `length` in JavaScript?
+2. Is `length` a method or a property?
+3. What does `"Hello".length` return?
+4. Does `length` count spaces?
+5. What is the length of `"Java Script"`?
+6. What is the length of an empty string `""`?
+7. Can we use `length` on numbers?
+8. Why is `"12345".length` equal to 5?
+9. Where is `length` used in real projects?
+10. Why is `length` useful for password validation?
+11. How is `length` used for OTP validation?
+12. How is `length` used in username validation?
+13. What will `" ".length` return? (A string containing one space.)
+14. What will `"ABC".length` return?
+15. What will `"A B C".length` return?
+16. Why does `"Axis Bank".length` include the space?
+17. Give three real-world examples where `length` is used.
+18. Can `length` be used to check if user input is empty?
+19. Which is better for password validation: checking `length` or checking exact text? Why?
+20. In a MERN application, name four places where you would use `length`.
+Remember this wording because interviewers often ask it exactly like this:
+
+What is the difference between a property and a method?
+
+Answer:
+
+Property stores information about an object.
+Method performs an action.
+
+Example:
+
+let name = "Shagun";
+
+console.log(name.length);      // Property
+console.log(name.toUpperCase()); // Method
+
+Notice:
+
+length        ❌ no ()
+toUpperCase() ✅ ()
+
+This distinction comes up frequently in JavaScript interviews.
+
