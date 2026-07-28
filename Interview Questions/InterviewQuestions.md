@@ -1973,3 +1973,37 @@ Local
 Global
 
 The local variable shadows (temporarily hides) the global variable inside the function. This concept is called Variable Shadowing, and it's good to know for interviews, even though it's not a separate topic in your syllabus.
+
+
+# 6. Interview Questions
+
+### Beginner
+
+1. What is hoisting?
+2. Does JavaScript move code to the top?
+3. How many execution phases are there?
+4. What happens to a `var` variable during the memory phase?
+5. What happens if you access a `var` before declaration?
+6. Is `let` hoisted?
+7. Is `const` hoisted?
+8. Why do `let` and `const` throw a `ReferenceError` before declaration?
+9. Are function declarations hoisted?
+10. Are function expressions hoisted?
+
+### Intermediate
+
+11. Why does `var` print `undefined` instead of throwing an error?
+12. Explain the Memory Creation Phase.
+13. Explain the Execution Phase.
+14. Compare hoisting behavior of `var`, `let`, and `const`.
+15. Explain hoisting of a function declaration versus a function expression.
+
+### Scenario-Based
+
+16. Why would a function declaration work before its definition while a function expression fails?
+17. What kind of bug can occur if you rely on `var` hoisting?
+18. In a banking application, why is using `let` or `const` generally safer than `var`?
+19. What would happen if you call an arrow function before its declaration?
+20. Why do modern JavaScript projects usually prefer `let` and `const`?
+
+> Notice that every interview question above is based only on concepts we've covered.
