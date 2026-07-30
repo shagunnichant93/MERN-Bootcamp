@@ -713,3 +713,48 @@ console.log(name);
 18. Why should email validation use `trim()`?
 19. Name four real-world applications where `trim()` is used.
 20. In a banking application, where would you use `trim()`?
+
+
+# 11. Interview Questions
+
+### Beginner
+
+1. What is `slice()`?
+2. Is `slice()` a method or property?
+3. Does `slice()` modify the original string?
+4. What does `slice(0,4)` mean?
+5. What happens if the second parameter is omitted?
+
+### Intermediate
+
+6. What is the output?
+
+```javascript
+console.log("JavaScript".slice(4));
+```
+
+7. Output?
+
+```javascript
+console.log("JavaScript".slice(0,4));
+```
+
+8. What is negative indexing?
+9. What does `slice(-4)` do?
+10. Why is `slice()` useful in banking applications?
+
+### Advanced
+
+11. Explain the difference between positive and negative indexing.
+12. Why is `slice()` considered a non-mutating method?
+13. What happens if the start index is greater than the end index?
+14. What happens if the end index is greater than the string length?
+15. Can `slice()` be chained with other methods? Give an example.
+
+### Scenario-Based
+
+16. How would you display only the last four digits of an account number?
+17. How would you extract the domain from an email?
+18. How would you extract a product code from `LAPTOP-2025`?
+19. Name four real-world uses of `slice()`.
+20. Where would you use `slice()` in a food-ordering application?

@@ -397,3 +397,127 @@ name = name.trim();
 ```
 
 (When you want to permanently remove spaces.)
+
+
+
+# 12. MCQs
+
+### Q1.
+
+`slice()` is:
+
+A) Property
+
+B) Method
+
+C) Variable
+
+D) Object
+
+---
+
+### Q2.
+
+Output?
+
+```javascript
+console.log("JavaScript".slice(0,4));
+```
+
+A)
+
+```text
+Java
+```
+
+B)
+
+```text
+Script
+```
+
+C)
+
+```text
+JavaScript
+```
+
+D)
+
+```text
+Error
+```
+
+---
+
+### Q3.
+
+Output?
+
+```javascript
+console.log("JavaScript".slice(-6));
+```
+
+A)
+
+```text
+Script
+```
+
+B)
+
+```text
+Java
+```
+
+C)
+
+```text
+ipt
+```
+
+D)
+
+```text
+Error
+```
+
+---
+
+### Q4.
+
+Does `slice()` modify the original string?
+
+A) Yes
+
+B) No
+
+---
+
+### Q5.
+
+Which code extracts the last 4 characters?
+
+A)
+
+```javascript
+text.slice(4)
+```
+
+B)
+
+```javascript
+text.slice(-4)
+```
+
+C)
+
+```javascript
+text.slice(0,4)
+```
+
+D)
+
+```javascript
+text.substring(-4)
+```
