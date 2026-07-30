@@ -758,3 +758,58 @@ console.log("JavaScript".slice(0,4));
 18. How would you extract a product code from `LAPTOP-2025`?
 19. Name four real-world uses of `slice()`.
 20. Where would you use `slice()` in a food-ordering application?
+
+
+# 12. Interview Questions
+
+## Beginner
+
+1. What is `substring()`?
+2. Is it a method or property?
+3. Does it modify the original string?
+4. What is the syntax of `substring()`?
+5. What happens if the second parameter is omitted?
+
+---
+
+## Intermediate
+
+6. Output?
+
+```javascript
+console.log("JavaScript".substring(0,4));
+```
+
+7. Output?
+
+```javascript
+console.log("New Delhi".substring(4));
+```
+
+8. Does `substring()` support negative indexing?
+9. What happens if a negative index is passed?
+10. Why doesn't `substring(-4)` return the last four characters?
+
+---
+
+## Advanced
+
+11. What happens if the start index is greater than the end index?
+12. Explain the biggest differences between `slice()` and `substring()`.
+13. Why is `substring()` considered non-mutating?
+14. Can `substring()` be chained with other methods? Give an example.
+15. What is the output?
+
+```javascript
+console.log("JavaScript".substring(6,2));
+```
+
+---
+
+## Scenario-Based
+
+16. How would you extract the first name from `"John Doe"`?
+17. How would you extract the domain from `"john@gmail.com"`?
+18. Where would you use `substring()` in a hospital management system?
+19. Name four real-world uses of `substring()`.
+20. In an employee management system, where could `substring()` be useful?
