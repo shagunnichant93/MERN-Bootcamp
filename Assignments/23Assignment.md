@@ -143,3 +143,169 @@ c) `password.length >= 8`
 d) `password = 8`
 
 ---
+MCQs
+1. toUpperCase() is a:
+
+A) Property
+
+B) Method
+
+C) Variable
+
+D) Function declaration
+
+2. What is the output?
+"bank".toUpperCase()
+
+A) bank
+
+B) BANK
+
+C) Bank
+
+D) Error
+
+3. Which is correct?
+
+A)
+
+text.upperCase()
+
+B)
+
+text.toUpperCase()
+
+C)
+
+text.upper()
+
+D)
+
+text.uppercase()
+4. toUpperCase() changes:
+
+A) Numbers
+
+B) Lowercase letters
+
+C) Spaces
+
+D) Symbols
+
+5. Which statement is true?
+
+A) It changes the original string automatically.
+
+B) It returns a new uppercase string.
+
+C) It deletes spaces.
+
+D) It removes numbers.
+
+
+
+# MCQs
+
+### 1.
+
+`toLowerCase()` is a:
+
+A) Property
+
+B) Variable
+
+C) Method
+
+D) Function
+
+---
+
+### 2.
+
+Output?
+
+```javascript
+console.log("HELLO".toLowerCase());
+```
+
+A)
+
+```
+HELLO
+```
+
+B)
+
+```
+hello
+```
+
+C)
+
+```
+Hello
+```
+
+D)
+
+```
+Error
+```
+
+---
+
+### 3.
+
+Strings in JavaScript are:
+
+A) Mutable
+
+B) Immutable
+
+C) Arrays
+
+D) Objects
+
+---
+
+### 4.
+
+Which method converts text to lowercase?
+
+A)
+
+```
+lower()
+```
+
+B)
+
+```
+Lower()
+```
+
+C)
+
+```
+toLowerCase()
+```
+
+D)
+
+```
+toLower()
+```
+
+---
+
+### 5.
+
+Can `toLowerCase()` be used for email validation?
+
+A) No
+
+B) Yes
+
+C) Only in Node.js
+
+D) Only in React

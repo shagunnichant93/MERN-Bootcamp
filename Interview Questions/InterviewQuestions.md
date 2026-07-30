@@ -468,3 +468,194 @@ toUpperCase() ✅ ()
 
 This distinction comes up frequently in JavaScript interviews.
 
+Interview Questions
+
+Answer these after completing the assignments.
+
+Q1. What does toUpperCase() do?
+Q2. Is toUpperCase() a property or a method?
+Q3. Does it change the original string?
+Q4. What does this print?
+let name = "hello";
+console.log(name.toUpperCase());
+Q5. Output?
+console.log("javascript".toUpperCase());
+Q6. Output?
+console.log("abc123".toUpperCase());
+Q7. Will numbers change?
+Q8. Why is toUpperCase() useful in login systems?
+Q9. Name three real-world uses of toUpperCase().
+Q10. Why do banks convert IFSC codes to uppercase?
+Q11. What is wrong with this code?
+let name = "john";
+
+name.toUpperCase();
+
+console.log(name);
+Q12. How do you permanently change a string to uppercase?
+Q13. Can spaces be converted to uppercase?
+Q14. Is "hello world" converted into "HELLO WORLD"?
+Q15. Can emails also be converted using toUpperCase()?
+Q16. What is the output?
+let city = "delhi";
+city = city.toUpperCase();
+console.log(city);
+Q17. Which is correct?
+
+A)
+
+name.upperCase();
+
+B)
+
+name.toUpperCase();
+Q18. Does toUpperCase() return a new string?
+Q19. What is the output?
+console.log("Pizza Hut".toUpperCase());
+Q20. Give four real-life examples where toUpperCase() is used
+
+
+
+# Interview Questions
+
+### Q1. What does `toLowerCase()` do?
+
+---
+
+### Q2. Is it a method or property?
+
+---
+
+### Q3. Does it change the original string?
+
+---
+
+### Q4. What is the output?
+
+```javascript
+console.log("HELLO".toLowerCase());
+```
+
+---
+
+### Q5. Output?
+
+```javascript
+console.log("JAVASCRIPT".toLowerCase());
+```
+
+---
+
+### Q6. Output?
+
+```javascript
+console.log("ABC123".toLowerCase());
+```
+
+---
+
+### Q7. Does it affect numbers?
+
+---
+
+### Q8. Why is `toLowerCase()` useful?
+
+---
+
+### Q9. Give three real-world examples where `toLowerCase()` is used.
+
+---
+
+### Q10. Why do websites convert emails to lowercase?
+
+---
+
+### Q11. What will this print?
+
+```javascript
+let name = "JOHN";
+
+name.toLowerCase();
+
+console.log(name);
+```
+
+---
+
+### Q12. How do you permanently convert a string to lowercase?
+
+---
+
+### Q13. Does `toLowerCase()` affect special characters?
+
+---
+
+### Q14. Can it be chained with other string methods?
+
+Example:
+
+```javascript
+name.trim().toLowerCase();
+```
+
+Yes or No?
+
+---
+
+### Q15. What does `toLowerCase()` return?
+
+---
+
+### Q16. Convert
+
+```
+NEW DELHI
+```
+
+to lowercase.
+
+---
+
+### Q17. Which method converts a string to lowercase?
+
+A)
+
+```javascript
+lower()
+```
+
+B)
+
+```javascript
+toLowerCase()
+```
+
+C)
+
+```javascript
+lowerCase()
+```
+
+D)
+
+```javascript
+Lower()
+```
+
+---
+
+### Q18. Can `toLowerCase()` be used for login validation?
+
+---
+
+### Q19. Convert
+
+```
+PIZZA HUT
+```
+
+to lowercase.
+
+---
+
+### Q20. Give four real-world uses of `toLowerCase()`.
