@@ -5,7 +5,7 @@ Welcome to my MERN Stack learning journey.
 ## About Me
 
 - Name: Shagun
-- Experience: 11 years of exp. in IT industry
+- Experience: 11 years of exp. in IT industry and currently on a break.
 - Goal: Become a Full Stack MERN Developer with AI integration.
 
 ---
@@ -33,9 +33,9 @@ MERN-Bootcamp
 - ✅ Day 1 - Introduction
 - ✅ JavaScript Setup
 - ✅ First JavaScript Program
-- ⏳ Variables
-- ⏳ Data Types
-- ⏳ Functions
+- ✅ Variables
+- ✅ Data Types
+- ✅ Functions
 - ⏳ Objects
 - ⏳ Arrays
 - ⏳ Node.js
@@ -48,4 +48,4 @@ MERN-Bootcamp
 
 ## Daily GitHub Commits
 
-I will commit my progress every day while learning MERN Stack.
+I will commit my progress after the topic is completed while learning MERN Stack.
