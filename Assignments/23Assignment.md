@@ -309,3 +309,91 @@ B) Yes
 C) Only in Node.js
 
 D) Only in React
+
+# 11. MCQs
+
+### Q1.
+
+`trim()` removes:
+
+A) All spaces
+
+B) Spaces only from beginning and end
+
+C) Middle spaces
+
+D) Numbers
+
+---
+
+### Q2.
+
+Output?
+
+```javascript
+console.log("   Hello".trim());
+```
+
+A)
+
+```text
+Hello
+```
+
+B)
+
+```text
+   Hello
+```
+
+C)
+
+```text
+Hello   
+```
+
+D)
+
+```text
+Error
+```
+
+---
+
+### Q3.
+
+Strings are:
+
+A) Mutable
+
+B) Immutable
+
+---
+
+### Q4.
+
+Can `trim()` be chained?
+
+A) No
+
+B) Yes
+
+---
+
+### Q5.
+
+Which code is correct?
+
+A)
+
+```javascript
+name.trim();
+```
+
+B)
+
+```javascript
+name = name.trim();
+```
+
+(When you want to permanently remove spaces.)

@@ -659,3 +659,57 @@ to lowercase.
 ---
 
 ### Q20. Give four real-world uses of `toLowerCase()`.
+
+ 10. Interview Questions
+
+Answer after completing the assignments.
+
+### Beginner
+
+1. What is `trim()`?
+2. Is `trim()` a method or a property?
+3. What does `trim()` remove?
+4. Does `trim()` remove spaces from the middle of a string?
+5. Does `trim()` change the original string?
+
+### Intermediate
+
+6. What is the output?
+
+```javascript
+console.log("   Hello   ".trim());
+```
+
+7. What is the output?
+
+```javascript
+console.log("New Delhi".trim());
+```
+
+8. Why doesn't `trim()` remove the space in `"New Delhi"`?
+9. Why is `trim()` important in login systems?
+10. Why is `trim()` useful in search functionality?
+
+### Advanced
+
+11. Can `trim()` be chained with other methods?
+12. Give an example of method chaining using `trim()`.
+13. Why are strings immutable?
+14. How do you permanently remove spaces using `trim()`?
+15. What is wrong with this code?
+
+```javascript
+let name = "   Rahul   ";
+
+name.trim();
+
+console.log(name);
+```
+
+### Scenario-Based
+
+16. Why should registration forms use `trim()`?
+17. Why should OTP validation use `trim()`?
+18. Why should email validation use `trim()`?
+19. Name four real-world applications where `trim()` is used.
+20. In a banking application, where would you use `trim()`?
