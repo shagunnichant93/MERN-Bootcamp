@@ -521,3 +521,182 @@ D)
 ```javascript
 text.substring(-4)
 ```
+
+
+# 13. MCQs
+
+### Q1
+
+`substring()` is:
+
+A) Variable
+
+B) Method
+
+C) Property
+
+D) Object
+
+---
+
+### Q2
+
+Output?
+
+```javascript
+console.log("JavaScript".substring(0,4));
+```
+
+A)
+
+```text
+Java
+```
+
+B)
+
+```text
+Script
+```
+
+C)
+
+```text
+JavaScript
+```
+
+D)
+
+```text
+Error
+```
+
+---
+
+### Q3
+
+Does `substring()` support negative indexes?
+
+A) Yes
+
+B) No
+
+---
+
+### Q4
+
+What happens if the start index is greater than the end index?
+
+A) Error
+
+B) Returns empty string
+
+C) Swaps the indexes automatically
+
+D) Returns `undefined`
+
+---
+
+### Q5
+
+Which method supports negative indexing?
+
+A) `substring()`
+
+B) `slice()`
+
+C) Both
+
+D) Neither
+
+
+
+# 12. MCQs
+
+### Q1
+
+`replace()` is a:
+
+A) Property
+
+B) Method
+
+C) Variable
+
+D) Object
+
+---
+
+### Q2
+
+Output?
+
+```javascript
+console.log("SpiderMan".replace("Man","Woman"));
+```
+
+A)
+
+```text
+SpiderMan
+```
+
+B)
+
+```text
+SpiderWoman
+```
+
+C)
+
+```text
+WomanSpider
+```
+
+D)
+
+```text
+Error
+```
+
+---
+
+### Q3
+
+Does `replace()` modify the original string?
+
+A) Yes
+
+B) No
+
+---
+
+### Q4
+
+How many occurrences does `replace()` replace by default?
+
+A) All
+
+B) First occurrence only
+
+C) Last occurrence only
+
+D) None
+
+---
+
+### Q5
+
+Which code permanently updates the string?
+
+A)
+
+```javascript
+name.replace("John","Rahul");
+```
+
+B)
+
+```javascript
+name = name.replace("John","Rahul");
+```

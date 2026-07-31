@@ -813,3 +813,59 @@ console.log("JavaScript".substring(6,2));
 18. Where would you use `substring()` in a hospital management system?
 19. Name four real-world uses of `substring()`.
 20. In an employee management system, where could `substring()` be useful?
+
+
+
+# 11. Interview Questions
+
+## Beginner
+
+1. What is `replace()`?
+2. Is `replace()` a method or a property?
+3. Does `replace()` modify the original string?
+4. What is the syntax of `replace()`?
+5. What happens if the search value is not found?
+
+---
+
+## Intermediate
+
+6. Output?
+
+```javascript
+console.log("SpiderMan".replace("Man","Woman"));
+```
+
+7. Output?
+
+```javascript
+console.log("resume.txt".replace(".txt",".pdf"));
+```
+
+8. Does `replace()` replace all occurrences?
+9. Why?
+10. How do you permanently replace text in a string?
+
+---
+
+## Advanced
+
+11. Why is `replace()` called a non-mutating method?
+12. Can `replace()` be chained with other methods? Give an example.
+13. What happens if the replacement string is empty (`""`)?
+14. Explain why `replace()` is useful in data cleaning.
+15. What is the output?
+
+```javascript
+console.log("apple apple".replace("apple","orange"));
+```
+
+---
+
+## Scenario-Based
+
+16. How would you remove `"EMP"` from `"EMP10025"`?
+17. How would you change `"Pending"` to `"Delivered"`?
+18. Name four real-world uses of `replace()`.
+19. Why is `replace()` useful in file handling?
+20. In a banking application, where could `replace()` be useful?
