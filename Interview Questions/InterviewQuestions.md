@@ -925,3 +925,65 @@ console.log("A-B-C-D".split("-", 2));
 18. Name four real-world uses of `split()`.
 19. Where is `split()` used in banking applications?
 20. Where is `split()` useful in a hospital management system?
+
+
+---
+
+# 11. Interview Questions
+
+## Beginner
+
+1. What is `includes()`?
+2. Is `includes()` a method or a property?
+3. What does `includes()` return?
+4. Does `includes()` modify the original string?
+5. What is the syntax of `includes()`?
+
+---
+
+## Intermediate
+
+6. Output?
+
+```javascript
+console.log("JavaScript".includes("Script"));
+```
+
+7. Output?
+
+```javascript
+console.log("JavaScript".includes("Java"));
+```
+
+8. Output?
+
+```javascript
+console.log("JavaScript".includes("Python"));
+```
+
+9. Is `includes()` case-sensitive?
+10. How can you perform a case-insensitive search?
+
+---
+
+## Advanced
+
+11. Why is `includes()` useful?
+12. Explain why `includes()` returns a Boolean.
+13. Why is `includes()` considered non-mutating?
+14. Can `includes()` be chained with other methods? Give an example.
+15. Output?
+
+```javascript
+console.log("JavaScript".includes("Script",4));
+```
+
+---
+
+## Scenario-Based
+
+16. How would you validate an email using `includes()`?
+17. How would you check if a website uses HTTPS?
+18. Name four real-world uses of `includes()`.
+19. How is `includes()` useful in banking applications?
+20. How can `includes()` help in a shopping website search feature?

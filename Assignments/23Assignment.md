@@ -788,3 +788,90 @@ B) `@`
 C) `-`
 
 D) `,`
+
+
+
+# 12. MCQs
+
+### Q1
+
+`includes()` returns:
+
+A) String
+
+B) Boolean
+
+C) Array
+
+D) Number
+
+---
+
+### Q2
+
+`includes()` is a:
+
+A) Property
+
+B) Method
+
+C) Variable
+
+D) Object
+
+---
+
+### Q3
+
+Output?
+
+```javascript
+console.log("JavaScript".includes("Script"));
+```
+
+A) true
+
+B) false
+
+C) Script
+
+D) Error
+
+---
+
+### Q4
+
+Does `includes()` modify the original string?
+
+A) Yes
+
+B) No
+
+---
+
+### Q5
+
+Which method is commonly used to perform a case-insensitive search?
+
+A)
+
+```javascript
+toUpperCase()
+```
+
+B)
+
+```javascript
+toLowerCase()
+```
+
+C)
+
+```javascript
+trim()
+```
+
+D)
+
+```javascript
+slice()
