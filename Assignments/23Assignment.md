@@ -875,3 +875,75 @@ D)
 
 ```javascript
 slice()
+
+
+
+# 12. MCQs
+
+### Q1.
+
+`startsWith()` returns:
+
+A) String
+
+B) Boolean
+
+C) Array
+
+D) Number
+
+---
+
+### Q2.
+
+`startsWith()` is a:
+
+A) Property
+
+B) Method
+
+C) Variable
+
+D) Object
+
+---
+
+### Q3.
+
+Output?
+
+```javascript
+console.log("SpiderMan".startsWith("Spider"));
+```
+
+A) `true`
+
+B) `false`
+
+C) `"Spider"`
+
+D) Error
+
+---
+
+### Q4.
+
+Does `startsWith()` modify the original string?
+
+A) Yes
+
+B) No
+
+---
+
+### Q5.
+
+Which method is commonly chained with `startsWith()` for a case-insensitive comparison?
+
+A) `trim()`
+
+B) `toLowerCase()`
+
+C) `split()`
+
+D) `slice()`

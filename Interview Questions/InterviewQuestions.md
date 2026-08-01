@@ -987,3 +987,59 @@ console.log("JavaScript".includes("Script",4));
 18. Name four real-world uses of `includes()`.
 19. How is `includes()` useful in banking applications?
 20. How can `includes()` help in a shopping website search feature?
+
+
+
+# 11. Interview Questions
+
+## Beginner
+
+1. What is `startsWith()`?
+2. Is `startsWith()` a method or a property?
+3. What does `startsWith()` return?
+4. Does `startsWith()` modify the original string?
+5. What is the syntax of `startsWith()`?
+
+---
+
+## Intermediate
+
+6. Output?
+
+```javascript
+console.log("JavaScript".startsWith("Java"));
+```
+
+7. Output?
+
+```javascript
+console.log("JavaScript".startsWith("Script"));
+```
+
+8. Is `startsWith()` case-sensitive?
+9. How can you perform a case-insensitive check?
+10. What is the optional second parameter used for?
+
+---
+
+## Advanced
+
+11. Why is `startsWith()` useful?
+12. Why does it return a Boolean value?
+13. Why is it considered a non-mutating method?
+14. Can it be chained with other methods? Give an example.
+15. Output?
+
+```javascript
+console.log("JavaScript".startsWith("Script",4));
+```
+
+---
+
+## Scenario-Based
+
+16. How would you check whether an employee ID starts with `"EMP"`?
+17. How would you validate that a website uses HTTPS?
+18. Name four real-world uses of `startsWith()`.
+19. How is `startsWith()` useful in banking?
+20. How is `startsWith()` useful in a hospital management system?
