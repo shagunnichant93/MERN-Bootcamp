@@ -700,3 +700,91 @@ B)
 ```javascript
 name = name.replace("John","Rahul");
 ```
+
+
+
+# 13. MCQs
+
+### Q1
+
+`split()` returns a:
+
+A) String
+
+B) Array
+
+C) Number
+
+D) Boolean
+
+---
+
+### Q2
+
+`split()` is a:
+
+A) Property
+
+B) Method
+
+C) Variable
+
+D) Object
+
+---
+
+### Q3
+
+Output?
+
+```javascript
+console.log("John Doe".split(" "));
+```
+
+A)
+
+```text
+John Doe
+```
+
+B)
+
+```javascript
+["John", "Doe"]
+```
+
+C)
+
+```text
+John
+```
+
+D)
+
+```text
+Doe
+```
+
+---
+
+### Q4
+
+Does `split()` modify the original string?
+
+A) Yes
+
+B) No
+
+---
+
+### Q5
+
+Which separator is used to split an email?
+
+A) `.`
+
+B) `@`
+
+C) `-`
+
+D) `,`

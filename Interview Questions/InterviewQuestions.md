@@ -869,3 +869,59 @@ console.log("apple apple".replace("apple","orange"));
 18. Name four real-world uses of `replace()`.
 19. Why is `replace()` useful in file handling?
 20. In a banking application, where could `replace()` be useful?
+
+
+
+# 12. Interview Questions
+
+## Beginner
+
+1. What is `split()`?
+2. Is `split()` a method or a property?
+3. Does `split()` modify the original string?
+4. What does `split()` return?
+5. What is the syntax of `split()`?
+
+---
+
+## Intermediate
+
+6. Output?
+
+```javascript
+console.log("John Doe".split(" "));
+```
+
+7. Output?
+
+```javascript
+console.log("Apple,Mango".split(","));
+```
+
+8. What happens if the separator is not found?
+9. Can `split()` return only a limited number of elements?
+10. Which parameter controls the number of returned elements?
+
+---
+
+## Advanced
+
+11. Why is `split()` useful in JavaScript?
+12. Explain the difference between a string and the array returned by `split()`.
+13. Why is `split()` considered a non-mutating method?
+14. Can `split()` be chained with other methods? Give an example.
+15. What is the output?
+
+```javascript
+console.log("A-B-C-D".split("-", 2));
+```
+
+---
+
+## Scenario-Based
+
+16. How would you extract the username from `"john@gmail.com"`?
+17. How would you extract the file extension from `"resume.pdf"`?
+18. Name four real-world uses of `split()`.
+19. Where is `split()` used in banking applications?
+20. Where is `split()` useful in a hospital management system?
