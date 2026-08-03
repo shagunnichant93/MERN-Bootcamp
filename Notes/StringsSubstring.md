@@ -830,20 +830,3 @@ Remember these **two golden rules**:
 If you remember just these two differences, you'll answer 90% of interview questions on this topic correctly.
 
 ---
-
-### Your Task
-
-Complete:
-
-* ✅ 10 Coding Assignments
-* ✅ 1 Mini Project
-* ✅ 20 Interview Questions
-* ✅ 5 MCQs
-
-Then send me:
-
-1. Your interview answers
-2. MCQ answers
-3. Terminal output for the coding assignments and mini project
-
-We'll review everything together before moving to **`replace()`**.

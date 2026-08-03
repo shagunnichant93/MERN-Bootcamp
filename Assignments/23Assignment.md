@@ -947,3 +947,159 @@ B) `toLowerCase()`
 C) `split()`
 
 D) `slice()`
+
+
+
+# 12. MCQs
+
+### Q1.
+
+`endsWith()` returns:
+
+A) String
+
+B) Boolean
+
+C) Array
+
+D) Number
+
+---
+
+### Q2.
+
+`endsWith()` is a:
+
+A) Property
+
+B) Method
+
+C) Variable
+
+D) Object
+
+---
+
+### Q3.
+
+Output?
+
+```javascript
+console.log("movie.mp4".endsWith(".mp4"));
+```
+
+A) `true`
+
+B) `false`
+
+C) `.mp4`
+
+D) Error
+
+---
+
+### Q4.
+
+Does `endsWith()` modify the original string?
+
+A) Yes
+
+B) No
+
+---
+
+### Q5.
+
+Which method is commonly chained with `endsWith()` for case-insensitive comparison?
+
+A) `trim()`
+
+B) `toLowerCase()`
+
+C) `split()`
+
+D) `slice()`
+
+
+# 12. MCQs
+
+### Q1.
+
+Template Literals use:
+
+A) Single quotes
+
+B) Double quotes
+
+C) Backticks
+
+D) Parentheses
+
+---
+
+### Q2.
+
+Variables are inserted using:
+
+A) `$(name)`
+
+B) `${name}`
+
+C) `[name]`
+
+D) `<name>`
+
+---
+
+### Q3.
+
+Output?
+
+```javascript
+let name = "John";
+console.log(`Hello ${name}`);
+```
+
+A)
+
+```
+Hello John
+```
+
+B)
+
+```
+Hello ${name}
+```
+
+C)
+
+```
+Hello
+```
+
+D)
+
+```
+Error
+```
+
+---
+
+### Q4.
+
+Can expressions be used inside `${}`?
+
+A) No
+
+B) Yes
+
+---
+
+### Q5.
+
+Which is more readable for modern JavaScript?
+
+A) String concatenation
+
+B) Template Literals

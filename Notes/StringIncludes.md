@@ -1,1087 +1,676 @@
-# **MERN Bootcamp – Day 15**
+Excellent! 🎉
 
-## **Module 2 – Advanced Functions**
-
-# **Topic: Higher Order Functions (HOF)**
+You're now entering the last part of the **String Methods** section. The remaining topics (`includes()`, `startsWith()`, `endsWith()`, and Template Literals) are comparatively easier, and you'll see them frequently in React, Node.js, and interviews.
 
 ---
 
-# What are Higher Order Functions?
+# Module 3 — Strings
 
-A **Higher Order Function (HOF)** is a function that **either accepts another function as an argument or returns another function.**
+# Topic 10 — `includes()`
 
-In simple words:
+> ⭐ One of the most frequently used string methods in real-world JavaScript.
 
-> A Higher Order Function is a function that works with other functions.
+You'll use `includes()` in:
 
-Example:
+* 🔐 Login validation
+* 📧 Email validation
+* 🛒 Product search
+* 🔍 Search bars
+* 🏦 Banking applications
+* 🏥 Hospital management systems
+* 📱 React applications
+* 🌐 Node.js APIs
+
+---
+
+# Lesson Flow
+
+1. What is `includes()`?
+2. Why do we need it?
+3. Syntax
+4. How `includes()` works
+5. Return value
+6. Real-life examples
+7. Code examples
+8. Common mistakes
+9. Coding assignments
+10. Mini Project
+11. Interview Questions
+12. MCQs
+13. Notes
+14. Git Practice
+
+---
+
+# 1. What is `includes()`?
+
+## Definition
+
+`includes()` is a **string method** used to **check whether a string contains a specified text**.
+
+It returns a **Boolean value**:
+
+* `true` → if the text is found.
+* `false` → if the text is not found.
+
+It **does not modify the original string**.
+
+---
+
+# Why do we need `includes()`?
+
+Imagine these situations:
+
+* Check if an email contains `"@"`.
+* Check if a password contains a special character.
+* Check if a product name contains `"Laptop"`.
+* Check if a URL contains `"https"`.
+* Check if a hospital ID contains `"PAT"`.
+
+Instead of writing complex conditions, JavaScript provides `includes()`.
+
+---
+
+# 2. Syntax
 
 ```javascript
-function greet() {
-    console.log("Hello");
-}
+string.includes(searchText);
+```
 
-function execute(callback) {
-    callback();
-}
+or
 
-execute(greet);
+```javascript
+string.includes(searchText, startIndex);
+```
+
+### Parameters
+
+* **searchText** → Text to search for.
+* **startIndex** *(optional)* → Position from which to start searching.
+
+---
+
+# 3. Basic Example
+
+```javascript
+let city = "New Delhi";
+
+console.log(city.includes("Delhi"));
 ```
 
 Output
 
+```text
+true
 ```
-Hello
-```
-
-Here
-
-* `execute()` → Higher Order Function
-* `greet()` → Callback Function
 
 ---
 
-# Real Life Example
-
-Imagine a restaurant.
-
-Customer orders food.
-
-Restaurant accepts the order.
-
-Chef prepares food.
-
-Delivery boy delivers it.
-
-Restaurant itself doesn't cook.
-
-It simply **accepts another function (chef's work)** and executes it.
-
-Exactly how Higher Order Functions work.
-
----
-
-# Syntax
+## Example 2
 
 ```javascript
-function higherOrder(callback) {
-    callback();
-}
-```
+let city = "New Delhi";
 
----
-
-# Example 1
-
-## helloHOF.js
-
-```javascript
-function welcome() {
-    console.log("Welcome to MERN");
-}
-
-function executeTask(task) {
-    task();
-}
-
-executeTask(welcome);
+console.log(city.includes("Mumbai"));
 ```
 
 Output
 
-```
-Welcome to MERN
+```text
+false
 ```
 
 ---
 
-# Example 2
-
-## calculatorHOF.js
+## Example 3
 
 ```javascript
-function add(a, b) {
-    console.log(a + b);
-}
+let email = "john@gmail.com";
 
-function calculate(a, b, operation) {
-    operation(a, b);
-}
-
-calculate(20, 10, add);
+console.log(email.includes("@"));
 ```
 
 Output
 
-```
-30
+```text
+true
 ```
 
 ---
 
-# Example 3
-
-## bankHOF.js
+## Example 4
 
 ```javascript
-function deposit() {
-    console.log("Money Deposited");
-}
+let website = "https://google.com";
 
-function transaction(action) {
-    action();
-}
-
-transaction(deposit);
+console.log(website.includes("https"));
 ```
 
 Output
 
-```
-Money Deposited
+```text
+true
 ```
 
 ---
 
-# Example 4
-
-## loginHOF.js
+## Example 5
 
 ```javascript
-function loginSuccess() {
-    console.log("Dashboard Loaded");
-}
+let movie = "SpiderMan";
 
-function login(callback) {
-    console.log("Login Successful");
-    callback();
-}
-
-login(loginSuccess);
+console.log(movie.includes("Man"));
 ```
 
 Output
 
-```
-Login Successful
-Dashboard Loaded
+```text
+true
 ```
 
 ---
 
-# Example 5
-
-## shoppingHOF.js
+# 4. Using `startIndex`
 
 ```javascript
-function payment() {
-    console.log("Payment Successful");
-}
+let text = "JavaScript";
 
-function checkout(callback) {
-    console.log("Items Checked Out");
-    callback();
-}
-
-checkout(payment);
+console.log(text.includes("Script", 4));
 ```
 
 Output
 
+```text
+true
 ```
-Items Checked Out
-Payment Successful
-```
+
+Because the search starts from index `4`.
 
 ---
 
-# Example 6
-
-## movieHOF.js
+Another example:
 
 ```javascript
-function enjoyMovie() {
-    console.log("Enjoy the Movie");
-}
-
-function bookTicket(callback) {
-    console.log("Ticket Booked");
-    callback();
-}
-
-bookTicket(enjoyMovie);
+console.log("JavaScript".includes("Java", 5));
 ```
 
 Output
 
+```text
+false
 ```
-Ticket Booked
-Enjoy the Movie
-```
+
+The search starts at index `5`, so `"Java"` is skipped.
 
 ---
 
-# Example 7
+# 5. Return Value
 
-## restaurantHOF.js
+Unlike methods like `slice()` or `split()`:
+
+* `includes()` **does not return a string or array**.
+* It returns **only a Boolean value**.
 
 ```javascript
-function prepareFood() {
-    console.log("Food Prepared");
-}
-
-function placeOrder(callback) {
-    console.log("Order Accepted");
-    callback();
-}
-
-placeOrder(prepareFood);
+console.log("Apple".includes("pp"));
 ```
 
 Output
 
-```
-Order Accepted
-Food Prepared
+```text
+true
 ```
 
 ---
 
-# Example 8
-
-## hospitalHOF.js
-
 ```javascript
-function assignDoctor() {
-    console.log("Doctor Assigned");
-}
-
-function registerPatient(callback) {
-    console.log("Patient Registered");
-    callback();
-}
-
-registerPatient(assignDoctor);
+console.log("Apple".includes("zz"));
 ```
 
 Output
 
-```
-Patient Registered
-Doctor Assigned
+```text
+false
 ```
 
 ---
 
-# Example 9
+# 6. Real-Life Examples
 
-## employeeHOF.js
+## Login System
 
 ```javascript
-function creditSalary() {
-    console.log("Salary Credited");
-}
+let email = "john@gmail.com";
 
-function verifyEmployee(callback) {
-    console.log("Employee Verified");
-    callback();
-}
-
-verifyEmployee(creditSalary);
+console.log(email.includes("@"));
 ```
 
 Output
 
-```
-Employee Verified
-Salary Credited
+```text
+true
 ```
 
 ---
 
-# Example 10
-
-## examHOF.js
+## Banking
 
 ```javascript
-function publishResult() {
-    console.log("Result Published");
-}
+let account = "ACC-123456";
 
-function completeExam(callback) {
-    console.log("Exam Completed");
-    callback();
-}
-
-completeExam(publishResult);
+console.log(account.includes("ACC"));
 ```
 
 Output
 
-```
-Exam Completed
-Result Published
+```text
+true
 ```
 
 ---
 
-# Example 11 (Passing Different Functions)
+## Hospital
 
 ```javascript
-function add(a, b) {
-    console.log("Addition:", a + b);
-}
+let patient = "PAT-458921";
 
-function subtract(a, b) {
-    console.log("Subtraction:", a - b);
-}
-
-function multiply(a, b) {
-    console.log("Multiplication:", a * b);
-}
-
-function calculator(a, b, operation) {
-    operation(a, b);
-}
-
-calculator(20, 10, add);
-calculator(20, 10, subtract);
-calculator(20, 10, multiply);
+console.log(patient.includes("PAT"));
 ```
 
 Output
 
-```
-Addition: 30
-Subtraction: 10
-Multiplication: 200
+```text
+true
 ```
 
 ---
 
-# Example 12 (Anonymous Function)
+## Shopping Website
 
 ```javascript
-function process(callback) {
-    console.log("Processing...");
-    callback();
-}
+let product = "Apple iPhone 14";
 
-process(function () {
-    console.log("Process Complete");
-});
+console.log(product.includes("iPhone"));
 ```
 
 Output
 
-```
-Processing...
-Process Complete
+```text
+true
 ```
 
 ---
 
-# Example 13 (Arrow Function)
+## Food Ordering
 
 ```javascript
-function download(callback) {
-    console.log("Downloading...");
-    callback();
-}
+let order = "Pizza, Burger, Pasta";
 
-download(() => {
-    console.log("Download Complete");
-});
+console.log(order.includes("Burger"));
 ```
 
 Output
 
-```
-Downloading...
-Download Complete
-```
-
----
-
-# Real-Life Uses of Higher Order Functions
-
-### Payment Gateway
-
-```
-Verify Payment
-↓
-
-Send Receipt
+```text
+true
 ```
 
 ---
 
-### Login System
-
-```
-Login
-↓
-
-Load Dashboard
-```
-
----
-
-### Food Delivery
-
-```
-Place Order
-↓
-
-Prepare Food
-↓
-
-Deliver Food
-```
-
----
-
-### OTP Verification
-
-```
-Verify OTP
-↓
-
-Allow Login
-```
-
----
-
-### Online Shopping
-
-```
-Checkout
-↓
-
-Payment
-↓
-
-Invoice
-```
-
----
-
-# Why Higher Order Functions?
-
-They make code:
-
-* Reusable
-* Flexible
-* Cleaner
-* Easier to maintain
-* Dynamic (you can change behavior by passing different functions)
-
----
-
-# Difference
-
-| Callback Function        | Higher Order Function            |
-| ------------------------ | -------------------------------- |
-| Passed as an argument    | Accepts another function         |
-| Performs the actual task | Decides when to execute the task |
-
-Example:
+# 7. Method Chaining
 
 ```javascript
-function greet() {
-    console.log("Hello");
-}
+let email = "  JOHN@GMAIL.COM  ";
 
-function execute(callback) {
-    callback();
-}
-
-execute(greet);
-```
-
-* `greet` → Callback
-* `execute` → Higher Order Function
-
----
-
-# Common Mistake
-
-❌ Wrong
-
-```javascript
-execute(greet());
-```
-
-This executes `greet` immediately and passes its return value.
-
-✅ Correct
-
-```javascript
-execute(greet);
-```
-
-This passes the function itself, allowing `execute` to call it later.
-
----
-
-# Mini Assignment (10 Programs)
-
-1. Create `paymentHOF.js` (verify payment → send receipt)
-2. Create `otpHOF.js` (verify OTP → login)
-3. Create `foodOrderHOF.js` (order → prepare → deliver)
-4. Create `movieHOF.js` (book ticket → enjoy movie)
-5. Create `hospitalHOF.js` (register patient → assign doctor)
-6. Create `employeeHOF.js` (verify employee → credit salary)
-7. Create `shoppingHOF.js` (checkout → payment)
-8. Create `bankHOF.js` (deposit → SMS notification)
-9. Create `calculatorHOF.js` (pass add, subtract, multiply callbacks)
-10. Create `downloadHOF.js` (download → install)
-
----
-
-# Quiz (Answer after completing the programs)
-
-### Q1.
-
-What is a Higher Order Function?
-
-**a)** A variable
-
-**b)** A function that accepts or returns another function
-
-**c)** A loop
-
-**d)** An array
-
----
-
-### Q2.
-
-Which line correctly passes a callback?
-
-**a)** `execute(greet())`
-
-**b)** `execute(greet)`
-
-**c)** `greet(execute)`
-
-**d)** `execute = greet`
-
----
-
-### Q3.
-
-What is the difference between a callback function and a Higher Order Function?
-
----
-
-### Q4.
-
-Can a Higher Order Function call different callback functions?
-
-Yes / No
-
----
-
-### Q5.
-
-Give one real-life example where a Higher Order Function is useful.
-
----
-
-# Interview Questions (Answer in Detail)
-
-### Basic
-
-1. What is a Higher Order Function?
-2. What is a callback function?
-3. What is the difference between a callback and a Higher Order Function?
-4. Can a Higher Order Function accept multiple callback functions?
-5. What happens if you write `execute(greet())` instead of `execute(greet)`?
-
-### Intermediate
-
-6. Why are Higher Order Functions considered reusable?
-7. Can an arrow function be used as a callback? Explain with an example.
-8. Where are Higher Order Functions commonly used in JavaScript?
-9. What is callback hell? (If you don't know yet, simply write "Not covered yet.")
-10. What are the advantages of Higher Order Functions over writing separate functions?
-
-### Scenario-Based
-
-11. A banking application must:
-
-* Verify the user
-* Process the payment
-* Send an SMS confirmation
-
-How would Higher Order Functions help organize this flow?
-
-12. An e-commerce application must:
-
-* Add items to the cart
-* Process payment
-* Generate an invoice
-
-How can callbacks make this workflow cleaner?
-
-13. Why are Higher Order Functions heavily used in asynchronous operations like API calls and event listeners?
-
----
-
-📌 **Important:** Complete all 10 programs, run them, and then send me:
-
-1. Screenshots of the outputs.
-2. Answers to the Quiz.
-3. Answers to the Interview Questions.
-
-As before, I won't move to the next topic (**Scope**) until you type **"next"** after we've reviewed this day.
-Perfect! 😊 This will probably be the most important session of Module 2. After this, Higher Order Functions will become one of the easiest topics for you.
-
-# Module 2 - Extra Practice Session
-
-## Higher Order Functions (Master Class)
-
-Today, don't think like a programmer.
-
-Think like a **manager assigning work to employees.**
-
----
-
-# Example 1 - Office
-
-There are two employees.
-
-Employee 1 prints the report.
-
-```javascript
-function printReport() {
-    console.log("Report Printed");
-}
-```
-
-Employee 2 tells Employee 1 when to print.
-
-```javascript
-function manager(employee) {
-    console.log("Manager gave permission");
-    employee();
-}
-```
-
-Now,
-
-```javascript
-manager(printReport);
+console.log(email.trim().toLowerCase().includes("@"));
 ```
 
 Output
 
+```text
+true
 ```
-Manager gave permission
-Report Printed
-```
 
-### Question
+Notice how we combine:
 
-Who is the Higher Order Function?
-
-A) printReport()
-
-B) manager()
+* `trim()`
+* `toLowerCase()`
+* `includes()`
 
 ---
 
-### Answer
+# 8. Common Mistakes
 
-✔ **manager()**
+## Mistake 1
 
-Why?
-
-Because it accepts another function.
-
----
-
-Who is the Callback?
-
-✔ **printReport()**
-
-Because it is passed into another function.
-
----
-
-# Example 2 - Swiggy
-
-Chef
+Thinking `includes()` returns the found text.
 
 ```javascript
-function prepareFood() {
-    console.log("Food Ready");
-}
-```
+let city = "New Delhi";
 
-Restaurant
-
-```javascript
-function takeOrder(chef) {
-    console.log("Order Accepted");
-    chef();
-}
-```
-
-Call
-
-```javascript
-takeOrder(prepareFood);
+console.log(city.includes("Delhi"));
 ```
 
 Output
 
-```
-Order Accepted
-Food Ready
+```text
+true
 ```
 
-Restaurant = ?
-
-Chef = ?
+It returns **true**, not `"Delhi"`.
 
 ---
 
-Answer
+## Mistake 2
 
-Restaurant → Higher Order Function
-
-Chef → Callback
-
----
-
-# Example 3 - Bank
+Case sensitivity.
 
 ```javascript
-function sendSMS() {
-    console.log("SMS Sent");
-}
-
-function deposit(task) {
-    console.log("Money Deposited");
-    task();
-}
-
-deposit(sendSMS);
+console.log("JavaScript".includes("java"));
 ```
 
-### Think carefully
+Output
 
-Who accepts another function?
-
-```
-deposit()
+```text
+false
 ```
 
-So deposit is the HOF.
+Because:
 
-Who actually performs the work?
-
-```
-sendSMS()
+```text
+Java ≠ java
 ```
 
-So sendSMS is Callback.
-
----
-
-# Example 4 - Hospital
+Correct:
 
 ```javascript
-function prescribeMedicine() {
-    console.log("Medicine Prescribed");
-}
-
-function doctor(callback) {
-    console.log("Patient Checked");
-    callback();
-}
-
-doctor(prescribeMedicine);
+console.log("JavaScript".toLowerCase().includes("java"));
 ```
 
-Question
+Output
 
-Who is HOF?
-
-Who is Callback?
-
----
-
-Answer
-
-doctor → HOF
-
-prescribeMedicine → Callback
+```text
+true
+```
 
 ---
 
-# Example 5 - OTP
+## Mistake 3
+
+Thinking it changes the original string.
+
+It doesn't.
+
+Strings remain immutable.
+
+---
+
+# 9. Coding Assignments (10)
+
+Create these files inside **01-JavaScript**.
+
+### 1. emailValidation.js
+
+Check whether:
+
+```text
+john@gmail.com
+```
+
+contains `"@"`.
+
+Display:
+
+```text
+Valid Email: true
+```
+
+---
+
+### 2. websiteValidation.js
+
+Check whether:
+
+```text
+https://google.com
+```
+
+contains `"https"`.
+
+---
+
+### 3. bankValidation.js
+
+Check whether:
+
+```text
+ACC-123456
+```
+
+contains `"ACC"`.
+
+---
+
+### 4. patientValidation.js
+
+Check whether:
+
+```text
+PAT-458921
+```
+
+contains `"PAT"`.
+
+---
+
+### 5. productSearch.js
+
+Check whether:
+
+```text
+Apple iPhone 14
+```
+
+contains `"iPhone"`.
+
+---
+
+### 6. foodSearch.js
+
+Check whether:
+
+```text
+Pizza, Burger, Pasta
+```
+
+contains `"Burger"`.
+
+---
+
+### 7. citySearch.js
+
+Check whether:
+
+```text
+New Delhi
+```
+
+contains `"Mumbai"`.
+
+---
+
+### 8. movieSearch.js
+
+Check whether:
+
+```text
+SpiderMan
+```
+
+contains `"Man"`.
+
+---
+
+### 9. companySearch.js
+
+Check whether:
+
+```text
+Microsoft Corporation
+```
+
+contains `"Google"`.
+
+---
+
+### 10. usernameValidation.js
+
+Check whether:
+
+```text
+john_doe123
+```
+
+contains `"_"`.
+
+---
+
+# 10. Mini Project
+
+## Password Strength Checker
+
+Store:
+
+```text
+Pass@123
+```
+
+Check whether it contains:
+
+```text
+@
+```
+
+Display:
+
+```text
+Contains @ : true
+```
+
+---
+
+# 11. Interview Questions
+
+## Beginner
+
+1. What is `includes()`?
+2. Is `includes()` a method or a property?
+3. What does `includes()` return?
+4. Does `includes()` modify the original string?
+5. What is the syntax of `includes()`?
+
+---
+
+## Intermediate
+
+6. Output?
 
 ```javascript
-function login() {
-    console.log("Login Successful");
-}
-
-function verifyOTP(callback) {
-    console.log("OTP Verified");
-    callback();
-}
-
-verifyOTP(login);
+console.log("JavaScript".includes("Script"));
 ```
 
-Question
-
-Which function is HOF?
-
----
-
-Answer
-
-verifyOTP
-
-Why?
-
-Because it accepts another function.
-
----
-
-# Example 6 - Calculator
+7. Output?
 
 ```javascript
-function add(a,b){
-    console.log(a+b);
-}
-
-function calculate(a,b,operation){
-    operation(a,b);
-}
-
-calculate(10,20,add);
+console.log("JavaScript".includes("Java"));
 ```
 
-Question
-
-Who is HOF?
-
----
-
-Answer
-
-calculate()
-
-Who is Callback?
-
-add()
-
----
-
-# Example 7 - Movie
+8. Output?
 
 ```javascript
-function enjoyMovie(){
-    console.log("Enjoy Movie");
-}
-
-function bookTicket(callback){
-    console.log("Ticket Booked");
-    callback();
-}
-
-bookTicket(enjoyMovie);
+console.log("JavaScript".includes("Python"));
 ```
 
-HOF?
-
-Callback?
-
----
-
-Answer
-
-bookTicket = HOF
-
-enjoyMovie = Callback
+9. Is `includes()` case-sensitive?
+10. How can you perform a case-insensitive search?
 
 ---
 
-# Golden Rule
+## Advanced
 
-Whenever you see
+11. Why is `includes()` useful?
+12. Explain why `includes()` returns a Boolean.
+13. Why is `includes()` considered non-mutating?
+14. Can `includes()` be chained with other methods? Give an example.
+15. Output?
 
 ```javascript
-function xyz(something)
-```
-
-Ask yourself
-
-**Is `something` a function?**
-
-If YES
-
-Then xyz is probably a Higher Order Function.
-
----
-
-Whenever you see
-
-```javascript
-something();
-```
-
-Ask yourself
-
-Which function is executing?
-
-That is the Callback.
-
----
-
-# Visual Memory Trick
-
-```
-Customer
-      │
-      ▼
-Restaurant (Higher Order Function)
-      │
-      ▼
-Chef (Callback)
-      │
-      ▼
-Pizza Ready
-```
-
-Restaurant never cooks.
-
-Chef cooks.
-
-Exactly the same in JavaScript.
-
----
-
-# Another Visual
-
-```
-Higher Order Function
-        │
-        ▼
- Accepts Callback
-        │
-        ▼
-Decides WHEN to execute
-        │
-        ▼
-Callback Executes
-        │
-        ▼
-Task Completed
+console.log("JavaScript".includes("Script",4));
 ```
 
 ---
 
-# Interview Trick
+## Scenario-Based
 
-If interviewer gives
-
-```javascript
-function greet(){
-    console.log("Hello");
-}
-
-function execute(task){
-    task();
-}
-
-execute(greet);
-```
-
-Never panic.
-
-Just ask yourself
-
-**Who accepted another function?**
-
-```
-execute()
-```
-
-Higher Order Function ✔
-
-**Who got passed?**
-
-```
-greet()
-```
-
-Callback ✔
+16. How would you validate an email using `includes()`?
+17. How would you check if a website uses HTTPS?
+18. Name four real-world uses of `includes()`.
+19. How is `includes()` useful in banking applications?
+20. How can `includes()` help in a shopping website search feature?
 
 ---
 
-# Mini Quiz (Don't Run Code — Just Think)
+# 12. MCQs
 
 ### Q1
 
-```javascript
-function cook() {
-    console.log("Cooking");
-}
+`includes()` returns:
 
-function kitchen(worker) {
-    worker();
-}
+A) String
 
-kitchen(cook);
-```
+B) Boolean
 
-Who is the Higher Order Function?
+C) Array
 
-A) cook
-
-B) kitchen
+D) Number
 
 ---
 
 ### Q2
 
-```javascript
-function paymentSuccess() {
-    console.log("Receipt Sent");
-}
+`includes()` is a:
 
-function payment(callback) {
-    callback();
-}
+A) Property
 
-payment(paymentSuccess);
-```
+B) Method
 
-Who is the Callback?
+C) Variable
 
-A) payment
-
-B) paymentSuccess
+D) Object
 
 ---
 
 ### Q3
 
-```javascript
-function hello() {
-    console.log("Hello");
-}
+Output?
 
-hello();
+```javascript
+console.log("JavaScript".includes("Script"));
 ```
 
-Is there any Higher Order Function here?
+A) true
+
+B) false
+
+C) Script
+
+D) Error
+
+---
+
+### Q4
+
+Does `includes()` modify the original string?
 
 A) Yes
 
@@ -1089,119 +678,93 @@ B) No
 
 ---
 
-### Q4
-
-```javascript
-function welcome() {
-    console.log("Welcome");
-}
-
-function login(task) {
-    console.log("Login");
-    task();
-}
-
-login(welcome);
-```
-
-Which executes first?
-
-A) welcome
-
-B) login
-
----
-
 ### Q5
 
-Real Life
+Which method is commonly used to perform a case-insensitive search?
 
-Who is the Higher Order Function?
-
-```
-Restaurant Manager
-Chef
-```
-
----
-
-# Interview Questions
-
-### Basic
-
-1. What is a Higher Order Function?
-2. What is a Callback Function?
-3. Difference between Higher Order Function and Callback?
-4. Can a Higher Order Function return another function?
-5. Can an Arrow Function be used as a callback?
-6. Why are Higher Order Functions useful?
-
-### Intermediate
-
-7. Which one is the Higher Order Function?
+A)
 
 ```javascript
-function greet(){
-    console.log("Hello");
-}
-
-function execute(task){
-    task();
-}
-
-execute(greet);
+toUpperCase()
 ```
 
-8. Which one is the Callback?
+B)
 
-9. Why do React developers use Higher Order Functions everywhere?
+```javascript
+toLowerCase()
+```
 
-10. Name five real-life examples where Higher Order Functions are useful.
+C)
 
-### Scenario Based
+```javascript
+trim()
+```
 
-11. Explain how HOF works in an Online Food Ordering App.
+D)
 
-12. Explain how HOF works during Payment Processing.
-
-13. Explain HOF using OTP Verification.
+```javascript
+slice()
+```
 
 ---
 
-Take your time with these. Don't rush. Once you answer them, I'll know whether HOF has truly clicked for you. If there's still any confusion, we'll use even simpler analogies until it becomes second nature. You're building a strong foundation, and that's far more valuable than racing through the syllabus.
-One Last Trick (This Never Fails)
+# 13. Notes (`Strings.md`)
 
-Whenever you see code like this:
+Add:
 
-execute(greet);
+```md
+## includes()
 
-Read it in English:
+- Used to check whether a string contains specific text.
+- Returns `true` or `false`.
+- Returns a Boolean value.
+- Does not modify the original string.
+- Supports an optional start index.
 
-"execute receives greet."
+### Common Uses
 
-So:
+- Email validation
+- Search functionality
+- Login systems
+- Banking validation
+- Product search
+- URL validation
+```
 
-Receiver (execute) = Higher Order Function
-Received (greet) = Callback
+---
 
-Another example:
+# 14. Git Practice
 
-login(verifyOTP);
+```bash
+git status
+git add .
+git commit -m "Completed JavaScript includes() method"
+git push
+```
 
-Read:
+---
 
-"login receives verifyOTP."
+# 💡 Interview Tip
 
-login → Higher Order Function
-verifyOTP → Callback
+Many beginners confuse these methods:
 
-Another:
+| Method       | Returns | Purpose                         |
+| ------------ | ------- | ------------------------------- |
+| `includes()` | Boolean | Checks if text exists           |
+| `slice()`    | String  | Extracts part of a string       |
+| `split()`    | Array   | Converts a string into an array |
+| `replace()`  | String  | Replaces text                   |
 
-payment(sendSMS);
+### Easy way to remember
 
-Read:
+```javascript
+let email = "john@gmail.com";
 
-"payment receives sendSMS."
+console.log(email.includes("@")); // true
+console.log(email.split("@"));    // ["john", "gmail.com"]
+```
 
-payment → Higher Order Function
-sendSMS → Callback
+* `includes()` answers **"Does it exist?"**
+* `split()` answers **"Can I separate it?"**
+
+---

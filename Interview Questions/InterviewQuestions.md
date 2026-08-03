@@ -1043,3 +1043,109 @@ console.log("JavaScript".startsWith("Script",4));
 18. Name four real-world uses of `startsWith()`.
 19. How is `startsWith()` useful in banking?
 20. How is `startsWith()` useful in a hospital management system?
+
+
+# 11. Interview Questions
+
+## Beginner
+
+1. What is `endsWith()`?
+2. Is `endsWith()` a method or a property?
+3. What does `endsWith()` return?
+4. Does `endsWith()` modify the original string?
+5. What is the syntax of `endsWith()`?
+
+---
+
+## Intermediate
+
+6. Output?
+
+```javascript
+console.log("resume.pdf".endsWith(".pdf"));
+```
+
+7. Output?
+
+```javascript
+console.log("resume.pdf".endsWith(".jpg"));
+```
+
+8. Is `endsWith()` case-sensitive?
+9. How can you perform a case-insensitive check?
+10. What is the optional second parameter used for?
+
+---
+
+## Advanced
+
+11. Why is `endsWith()` useful?
+12. Why does it return a Boolean value?
+13. Why is it considered a non-mutating method?
+14. Can it be chained with other methods? Give an example.
+15. Output?
+
+```javascript
+console.log("JavaScript".endsWith("Java", 4));
+```
+
+---
+
+## Scenario-Based
+
+16. How would you validate whether a file is a PDF?
+17. How would you check whether an email belongs to Gmail?
+18. Name four real-world uses of `endsWith()`.
+19. How is `endsWith()` useful in a file upload system?
+20. How is `endsWith()` useful in website validation?
+
+
+
+
+# 11. Interview Questions
+
+## Beginner
+
+1. What are Template Literals?
+2. Which symbol is used for Template Literals?
+3. Why do we use Template Literals?
+4. Can variables be inserted inside Template Literals?
+5. What is variable interpolation?
+
+---
+
+## Intermediate
+
+6. What is the syntax for inserting variables?
+7. Can expressions be used inside Template Literals?
+8. Output?
+
+```javascript
+let a = 20;
+let b = 10;
+
+console.log(`Sum = ${a + b}`);
+```
+
+9. Can Template Literals create multi-line strings?
+10. Why are they more readable than string concatenation?
+
+---
+
+## Advanced
+
+11. Can methods be called inside `${}`? Give an example.
+12. Do Template Literals modify variables?
+13. Can function calls be used inside `${}`?
+14. Difference between Template Literals and string concatenation?
+15. Why are Template Literals widely used in React?
+
+---
+
+## Scenario-Based
+
+16. How would you display an employee's name and salary?
+17. How would you display a customer's bill amount?
+18. Name four real-world uses of Template Literals.
+19. How are Template Literals useful in Node.js?
+20. How are Template Literals useful in React?
