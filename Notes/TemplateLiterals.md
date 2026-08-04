@@ -691,25 +691,3 @@ A very common interview question is:
 | Poor for multi-line strings   | Supports multi-line strings naturally |
 
 ---
-
-# 🏁 Congratulations!
-
-This is the **last topic of Module 3**.
-
-## Your Tasks
-
-Complete:
-
-* ✅ 10 Coding Assignments
-* ✅ 1 Mini Project
-* ✅ 20 Interview Questions
-* ✅ 5 MCQs
-
-Then send me:
-
-1. Interview answers.
-2. MCQ answers.
-3. Terminal output for the coding assignments.
-4. Terminal output for the mini project.
-
-Once we finish this, we'll officially complete **Module 3 – Strings** and begin **Module 4 – Arrays**, where you'll learn concepts like `push()`, `pop()`, `shift()`, `unshift()`, `map()`, `filter()`, and `reduce()`, which are used extensively in MERN applications.

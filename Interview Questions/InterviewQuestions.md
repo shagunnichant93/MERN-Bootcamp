@@ -1149,3 +1149,87 @@ console.log(`Sum = ${a + b}`);
 18. Name four real-world uses of Template Literals.
 19. How are Template Literals useful in Node.js?
 20. How are Template Literals useful in React?
+
+
+# 9. Interview Questions
+
+## Beginner
+
+1. What is an array?
+2. Why do we use arrays?
+3. Which brackets are used to create an array?
+4. Can an array store multiple values?
+5. Can an array store different data types?
+
+---
+
+## Intermediate
+
+6. What is an index in an array?
+7. From which index does a JavaScript array start?
+8. What is the index of the first element?
+9. What happens if we access an index that doesn't exist?
+10. Can an array be empty?
+
+---
+
+## Advanced
+
+11. Is an array mutable or immutable?
+12. Can arrays contain other arrays?
+13. Can arrays contain objects?
+14. How do you access the third element?
+15. How do you access the last element if you know the array length?
+
+---
+
+## Scenario-Based
+
+16. Why are arrays useful in a shopping website?
+17. Why are arrays useful in a hospital system?
+18. Give four real-world examples where arrays are used.
+19. Why are arrays important in React?
+20. Why are arrays important in APIs?
+
+
+---
+
+# 9. Interview Questions
+
+## Beginner
+
+1. What is the `length` property?
+2. Is `length` a property or a method?
+3. What does `array.length` return?
+4. Does `length` start counting from 0?
+5. Can an empty array have a length?
+
+---
+
+## Intermediate
+
+6. What is the length of `["A", "B", "C"]`?
+7. What is the last index if length is 5?
+8. How do you access the last element?
+9. What happens if you access `arr[arr.length]`?
+10. Can arrays with different data types use `length`?
+
+---
+
+## Advanced
+
+11. Why is `length` important?
+12. Difference between index and length.
+13. Can `length` change?
+14. Is `length` available for strings too?
+15. Can we use `length` inside loops?
+
+---
+
+## Scenario-Based
+
+16. Why is `length` useful in a shopping cart?
+17. Why is `length` useful in a hospital system?
+18. Give four real-world examples where array `length` is used.
+19. Why is `length` important in React?
+20. Why is `length` important when processing API data?
