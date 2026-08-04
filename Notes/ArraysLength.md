@@ -644,3 +644,19 @@ git add .
 git commit -m "Completed Array length property"
 git push
 ```
+
+🎯 Key Takeaways
+
+Remember these three formulas:
+
+array.length
+
+➡️ Returns the total number of elements.
+
+array.length - 1
+
+➡️ Gives the last index.
+
+array[array.length - 1]
+
+➡️ Gives the last element.

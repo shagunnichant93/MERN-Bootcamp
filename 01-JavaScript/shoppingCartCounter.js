@@ -6,7 +6,8 @@ let cart = [
     "Monitor"
 ];
 
-console.log(`Shopping Cart: ${cart[0]}
+console.log(`Shopping Cart: 
+    ${cart[0]}
     ${cart[1]}
     ${cart[2]}
     ${cart[3]}
