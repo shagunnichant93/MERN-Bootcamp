@@ -170,3 +170,95 @@ B)
 
 ```javascript
 arr.length
+
+
+
+# 11. MCQs
+
+### 1.
+
+`push()` is a:
+
+A) Property
+
+B) Method
+
+C) Variable
+
+D) Operator
+
+---
+
+### 2.
+
+Where does `push()` add an element?
+
+A) Beginning
+
+B) End
+
+C) Middle
+
+D) Anywhere
+
+---
+
+### 3.
+
+Output?
+
+```javascript
+let arr = ["A"];
+
+arr.push("B");
+
+console.log(arr);
+```
+
+A)
+
+```text
+["A"]
+```
+
+B)
+
+```text
+["B"]
+```
+
+C)
+
+```text
+["A", "B"]
+```
+
+D)
+
+```text
+Error
+```
+
+---
+
+### 4.
+
+Can `push()` add multiple values?
+
+A) No
+
+B) Yes
+
+---
+
+### 5.
+
+What does `push()` return?
+
+A) First element
+
+B) Last element
+
+C) New array length
+
+D) Boolean

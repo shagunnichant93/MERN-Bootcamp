@@ -1233,3 +1233,44 @@ console.log(`Sum = ${a + b}`);
 18. Give four real-world examples where array `length` is used.
 19. Why is `length` important in React?
 20. Why is `length` important when processing API data?
+
+
+# 10. Interview Questions
+
+## Beginner
+
+1. What is `push()`?
+2. Is `push()` a method or a property?
+3. Where does `push()` add elements?
+4. Does `push()` change the original array?
+5. Can `push()` add multiple elements?
+
+---
+
+## Intermediate
+
+6. What is the syntax of `push()`?
+7. What does `push()` return?
+8. Is `push()` mutable or immutable?
+9. Can `push()` work on an empty array?
+10. What happens if you call `push()` without arguments?
+
+---
+
+## Advanced
+
+11. Difference between `push()` and `unshift()`?
+12. Difference between `push()` and array concatenation?
+13. Why is `push()` efficient?
+14. Can we store the return value of `push()`?
+15. Can we push different data types?
+
+---
+
+## Scenario-Based
+
+16. Why is `push()` useful in a shopping cart?
+17. Why is `push()` useful in a hospital system?
+18. Give four real-world examples where `push()` is used.
+19. Why is `push()` important in React?
+20. Why is `push()` useful when processing API data?
