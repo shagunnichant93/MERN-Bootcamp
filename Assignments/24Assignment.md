@@ -544,3 +544,93 @@ Is `splice()` mutable?
 A) No
 
 B) Yes
+
+
+# MCQs
+
+### 1.
+
+`slice()` is a:
+
+A) Property
+
+B) Method
+
+C) Variable
+
+D) Object
+
+---
+
+### 2.
+
+What does this return?
+
+```javascript
+let arr = ["A","B","C","D"];
+console.log(arr.slice(1,3));
+```
+
+A)
+
+```text
+["A","B"]
+```
+
+B)
+
+```text
+["B","C"]
+```
+
+C)
+
+```text
+["C","D"]
+```
+
+D)
+
+```text
+["A","B","C"]
+```
+
+---
+
+### 3.
+
+Does `slice()` modify the original array?
+
+A) Yes
+
+B) No
+
+---
+
+### 4.
+
+Which supports negative indexes?
+
+A) `slice()`
+
+B) `push()`
+
+C) `pop()`
+
+D) `shift()`
+
+---
+
+### 5.
+
+What does `slice()` return?
+
+A) Boolean
+
+B) Number
+
+C) New Array
+
+D) String
+
+---

@@ -1398,3 +1398,46 @@ console.log(`Sum = ${a + b}`);
 18. Banking example.
 19. React example.
 20. API example.
+
+
+---
+
+# Interview Questions
+
+## Beginner
+
+1. What is `slice()`?
+2. Is it a method or property?
+3. Does it modify the original array?
+4. Syntax of `slice()`.
+5. What does `slice(2)` mean?
+
+---
+
+## Intermediate
+
+6. What does `slice(1,4)` return?
+7. Is end index included?
+8. Does `slice()` support negative indexes?
+9. What does `slice(-2)` return?
+10. What does `slice()` return?
+
+---
+
+## Advanced
+
+11. Difference between `slice()` and `splice()`.
+12. Why is `slice()` immutable?
+13. Why is `slice()` useful?
+14. Can it copy the whole array?
+15. What happens if end index is omitted?
+
+---
+
+## Scenario-Based
+
+16. Shopping website example.
+17. Hospital example.
+18. Banking example.
+19. React example.
+20. API example.
