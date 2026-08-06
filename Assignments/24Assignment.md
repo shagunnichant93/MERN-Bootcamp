@@ -262,3 +262,99 @@ B) Last element
 C) New array length
 
 D) Boolean
+
+
+
+# 11. MCQs
+
+### 1.
+
+`shift()` is a:
+
+A) Property
+
+B) Method
+
+C) Variable
+
+D) Operator
+
+---
+
+### 2.
+
+`shift()` removes:
+
+A) First element
+
+B) Last element
+
+C) Middle element
+
+D) All elements
+
+---
+
+### 3.
+
+Output?
+
+```javascript
+let arr = ["A", "B"];
+
+arr.shift();
+
+console.log(arr);
+```
+
+A)
+
+```text
+["B"]
+```
+
+B)
+
+```text
+["A"]
+```
+
+C)
+
+```text
+["A", "B"]
+```
+
+D)
+
+```text
+Error
+```
+
+---
+
+### 4.
+
+What does `shift()` return?
+
+A) Updated array
+
+B) Removed first element
+
+C) Boolean
+
+D) Length
+
+---
+
+### 5.
+
+Calling `shift()` on an empty array returns:
+
+A) `null`
+
+B) `undefined`
+
+C) `0`
+
+D) Error

@@ -1316,3 +1316,44 @@ console.log(`Sum = ${a + b}`);
 18. Give four real-world examples where `shift()` is used.
 19. Why is `shift()` useful in React?
 20. Why is `shift()` useful when processing API data?
+
+
+# 10. Interview Questions
+
+## Beginner
+
+1. What is `unshift()`?
+2. Is `unshift()` a method or property?
+3. Where does `unshift()` add an element?
+4. Does `unshift()` modify the original array?
+5. What does `unshift()` return?
+
+---
+
+## Intermediate
+
+6. What is the syntax of `unshift()`?
+7. Can `unshift()` add multiple elements?
+8. Is `unshift()` mutable or immutable?
+9. Can `unshift()` be used on an empty array?
+10. Can we store its return value?
+
+---
+
+## Advanced
+
+11. Difference between `unshift()` and `push()`.
+12. Difference between `unshift()` and `shift()`.
+13. Why is `unshift()` useful?
+14. Can arrays containing different data types use `unshift()`?
+15. What happens to the array length after calling `unshift()`?
+
+---
+
+## Scenario-Based
+
+16. Why is `unshift()` useful in a hospital?
+17. Why is `unshift()` useful in banking?
+18. Give four real-world examples where `unshift()` is used.
+19. Why is `unshift()` useful in React?
+20. Why is `unshift()` useful when processing API data?
