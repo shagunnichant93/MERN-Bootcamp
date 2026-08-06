@@ -634,3 +634,92 @@ C) New Array
 D) String
 
 ---
+
+
+# MCQs
+
+### 1.
+
+`indexOf()` is a:
+
+A) Property
+
+B) Method
+
+C) Variable
+
+D) Object
+
+---
+
+### 2.
+
+Output?
+
+```javascript
+let arr = ["A","B","C"];
+
+console.log(arr.indexOf("B"));
+```
+
+A)
+
+```text
+0
+```
+
+B)
+
+```text
+1
+```
+
+C)
+
+```text
+2
+```
+
+D)
+
+```text
+-1
+```
+
+---
+
+### 3.
+
+What is returned if an element is not found?
+
+A) `0`
+
+B) `null`
+
+C) `-1`
+
+D) `false`
+
+---
+
+### 4.
+
+Does `indexOf()` modify the original array?
+
+A) Yes
+
+B) No
+
+---
+
+### 5.
+
+Which returns a boolean?
+
+A) `indexOf()`
+
+B) `includes()`
+
+C) Both
+
+D) Neither

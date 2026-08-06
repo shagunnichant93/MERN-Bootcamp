@@ -1441,3 +1441,47 @@ console.log(`Sum = ${a + b}`);
 18. Banking example.
 19. React example.
 20. API example.
+
+
+
+---
+
+# Interview Questions
+
+## Beginner
+
+1. What is `indexOf()`?
+2. Is it a method or property?
+3. What does it return?
+4. Syntax of `indexOf()`.
+5. What happens if an element is not found?
+
+---
+
+## Intermediate
+
+6. What does `indexOf("Mango")` return?
+7. What does `indexOf("Mango",2)` mean?
+8. Does `indexOf()` modify the original array?
+9. Is `indexOf()` mutable or immutable?
+10. Can it return `-1`?
+
+---
+
+## Advanced
+
+11. Difference between `indexOf()` and `includes()`.
+12. Why is `indexOf()` useful?
+13. Why does it return `-1`?
+14. Can it search duplicate elements?
+15. What happens if there are multiple matching elements?
+
+---
+
+## Scenario-Based
+
+16. Shopping website example.
+17. Hospital example.
+18. Banking example.
+19. React example.
+20. API example.
