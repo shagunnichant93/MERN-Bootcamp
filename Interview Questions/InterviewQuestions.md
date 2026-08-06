@@ -1357,3 +1357,44 @@ console.log(`Sum = ${a + b}`);
 18. Give four real-world examples where `unshift()` is used.
 19. Why is `unshift()` useful in React?
 20. Why is `unshift()` useful when processing API data?
+
+
+# Interview Questions
+
+## Beginner
+
+1. What is `splice()`?
+2. Is `splice()` a method or property?
+3. Can `splice()` remove elements?
+4. Can `splice()` add elements?
+5. Can `splice()` replace elements?
+
+---
+
+## Intermediate
+
+6. Syntax of `splice()`.
+7. What does `startIndex` mean?
+8. What does `deleteCount` mean?
+9. What happens when `deleteCount` is 0?
+10. What does `splice()` return?
+
+---
+
+## Advanced
+
+11. Is `splice()` mutable or immutable?
+12. Difference between `splice()` and `slice()`.
+13. Why is `splice()` useful?
+14. Can it insert multiple elements?
+15. Can it remove multiple elements?
+
+---
+
+## Scenario-Based
+
+16. Hospital example.
+17. Shopping website example.
+18. Banking example.
+19. React example.
+20. API example.

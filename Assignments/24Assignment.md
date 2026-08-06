@@ -358,3 +358,189 @@ B) `undefined`
 C) `0`
 
 D) Error
+
+
+
+# 11. MCQs
+
+### 1.
+
+`unshift()` is a:
+
+A) Property
+
+B) Method
+
+C) Variable
+
+D) Operator
+
+---
+
+### 2.
+
+`unshift()` adds an element at the:
+
+A) End
+
+B) Beginning
+
+C) Middle
+
+D) Random position
+
+---
+
+### 3.
+
+What is the output?
+
+```javascript
+let arr = ["B", "C"];
+
+arr.unshift("A");
+
+console.log(arr);
+```
+
+A)
+
+```text
+["A", "B", "C"]
+```
+
+B)
+
+```text
+["B", "C", "A"]
+```
+
+C)
+
+```text
+["A"]
+```
+
+D)
+
+```text
+Error
+```
+
+---
+
+### 4.
+
+What does `unshift()` return?
+
+A) Removed element
+
+B) Updated array
+
+C) New array length
+
+D) Boolean
+
+---
+
+### 5.
+
+Can `unshift()` add multiple elements?
+
+A) No
+
+B) Yes
+
+C) Only in Node.js
+
+D) Only in React
+
+
+
+# MCQs
+
+### 1.
+
+`splice()` is:
+
+A) Property
+
+B) Method
+
+C) Variable
+
+D) Object
+
+---
+
+### 2.
+
+Which method can add, remove, and replace elements?
+
+A) `pop()`
+
+B) `splice()`
+
+C) `shift()`
+
+D) `push()`
+
+---
+
+### 3.
+
+What does this print?
+
+```javascript
+let arr = ["A","B","C"];
+arr.splice(1,1);
+console.log(arr);
+```
+
+A)
+
+```text
+["A","C"]
+```
+
+B)
+
+```text
+["A","B"]
+```
+
+C)
+
+```text
+["B","C"]
+```
+
+D)
+
+```text
+["A","B","C"]
+```
+
+---
+
+### 4.
+
+`splice()` returns:
+
+A) Boolean
+
+B) Modified array
+
+C) Removed elements
+
+D) Length
+
+---
+
+### 5.
+
+Is `splice()` mutable?
+
+A) No
+
+B) Yes
