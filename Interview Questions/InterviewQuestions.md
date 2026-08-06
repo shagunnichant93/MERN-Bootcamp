@@ -1274,3 +1274,45 @@ console.log(`Sum = ${a + b}`);
 18. Give four real-world examples where `push()` is used.
 19. Why is `push()` important in React?
 20. Why is `push()` useful when processing API data?
+
+
+
+# 10. Interview Questions
+
+## Beginner
+
+1. What is `shift()`?
+2. Is `shift()` a method or property?
+3. Which element does `shift()` remove?
+4. Does `shift()` modify the original array?
+5. What does `shift()` return?
+
+---
+
+## Intermediate
+
+6. What is the syntax of `shift()`?
+7. What happens if `shift()` is called on an empty array?
+8. Is `shift()` mutable or immutable?
+9. Can `shift()` remove multiple elements at once?
+10. Can we store the removed value?
+
+---
+
+## Advanced
+
+11. Difference between `shift()` and `pop()`.
+12. Difference between `shift()` and `push()`.
+13. Why is `shift()` useful?
+14. Can arrays containing different data types use `shift()`?
+15. What happens to the array length after calling `shift()`?
+
+---
+
+## Scenario-Based
+
+16. Why is `shift()` useful in a bank queue?
+17. Why is `shift()` useful in a hospital waiting room?
+18. Give four real-world examples where `shift()` is used.
+19. Why is `shift()` useful in React?
+20. Why is `shift()` useful when processing API data?
