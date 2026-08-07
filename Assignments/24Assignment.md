@@ -904,3 +904,89 @@ B) `join()`
 C) `slice()`
 
 D) `splice()`
+
+
+
+# MCQs
+
+### 1.
+
+`reverse()` is a:
+
+A) Property
+
+B) Method
+
+C) Variable
+
+D) Object
+
+---
+
+### 2.
+
+Output?
+
+```javascript
+let arr = [1,2,3];
+
+console.log(arr.reverse());
+```
+
+A)
+
+```text
+1,2,3
+```
+
+B)
+
+```text
+3,2,1
+```
+
+C)
+
+```text
+2,1,3
+```
+
+D)
+
+```text
+Error
+```
+
+---
+
+### 3.
+
+Does `reverse()` modify the original array?
+
+A) Yes
+
+B) No
+
+---
+
+### 4.
+
+Is `reverse()` mutable?
+
+A) Yes
+
+B) No
+
+---
+
+### 5.
+
+Calling `reverse()` twice results in:
+
+A) Empty array
+
+B) Original order
+
+C) Sorted array
+
+D) Error

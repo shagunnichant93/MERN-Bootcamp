@@ -1571,3 +1571,47 @@ console.log(`Sum = ${a + b}`);
 18. Banking example.
 19. React example.
 20. API example.
+
+
+
+---
+
+# Interview Questions
+
+## Beginner
+
+1. What is `reverse()`?
+2. Is it a method or property?
+3. What does it do?
+4. Syntax of `reverse()`.
+5. Does it take parameters?
+
+---
+
+## Intermediate
+
+6. What does `reverse()` return?
+7. Does it modify the original array?
+8. Is `reverse()` mutable or immutable?
+9. Can it reverse an empty array?
+10. Can it reverse a single-element array?
+
+---
+
+## Advanced
+
+11. Difference between `reverse()` and `sort()`.
+12. Why is `reverse()` mutable?
+13. Why is it useful?
+14. Can it be chained with other methods?
+15. What happens if you call `reverse()` twice?
+
+---
+
+## Scenario-Based
+
+16. Shopping website example.
+17. Hospital example.
+18. Banking example.
+19. React example.
+20. API example.
