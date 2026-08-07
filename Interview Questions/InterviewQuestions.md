@@ -1615,3 +1615,46 @@ console.log(`Sum = ${a + b}`);
 18. Banking example.
 19. React example.
 20. API example.
+
+
+---
+
+# Interview Questions
+
+## Beginner
+
+1. What is `sort()`?
+2. Is it a method or property?
+3. What does it do?
+4. Syntax of `sort()`.
+5. Is compare function mandatory?
+
+---
+
+## Intermediate
+
+6. What does `sort()` return?
+7. Is `sort()` mutable?
+8. Why doesn't `sort()` work correctly for numbers?
+9. How do you sort numbers correctly?
+10. How do you sort descending?
+
+---
+
+## Advanced
+
+11. Difference between `sort()` and `reverse()`.
+12. Difference between `sort()` and `slice()`.
+13. Why is `sort()` mutable?
+14. Can `sort()` be chained?
+15. What happens if you call `sort()` twice?
+
+---
+
+## Scenario-Based
+
+16. Shopping website example.
+17. Hospital example.
+18. Banking example.
+19. React example.
+20. API example.

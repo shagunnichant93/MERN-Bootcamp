@@ -990,3 +990,112 @@ B) Original order
 C) Sorted array
 
 D) Error
+
+
+---
+
+# MCQs
+
+### 1.
+
+`sort()` is a:
+
+A) Property
+
+B) Method
+
+C) Variable
+
+D) Object
+
+---
+
+### 2.
+
+Default sorting is:
+
+A) Numerical
+
+B) Alphabetical (lexicographical)
+
+C) Random
+
+D) Reverse
+
+---
+
+### 3.
+
+Output?
+
+```javascript
+let arr = [10,2,5];
+
+arr.sort();
+
+console.log(arr);
+```
+
+A)
+
+```text
+2 5 10
+```
+
+B)
+
+```text
+10 2 5
+```
+
+C)
+
+```text
+10 5 2
+```
+
+D)
+
+```text
+2 10 5
+```
+
+---
+
+### 4.
+
+Correct ascending numeric sort:
+
+A)
+
+```javascript
+sort((a,b)=>b-a)
+```
+
+B)
+
+```javascript
+sort((a,b)=>a-b)
+```
+
+C)
+
+```javascript
+sort()
+```
+
+D)
+
+```javascript
+reverse()
+```
+
+---
+
+### 5.
+
+Is `sort()` mutable?
+
+A) No
+
+B) Yes
