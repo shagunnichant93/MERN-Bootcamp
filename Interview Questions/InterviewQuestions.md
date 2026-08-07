@@ -1485,3 +1485,46 @@ console.log(`Sum = ${a + b}`);
 18. Banking example.
 19. React example.
 20. API example.
+
+
+---------
+
+# Interview Questions
+
+## Beginner
+
+1. What is `includes()`?
+2. Is it a method or property?
+3. What does it return?
+4. Syntax of `includes()`.
+5. What happens if the element is not found?
+
+---
+
+## Intermediate
+
+6. What does `includes("Mango")` return?
+7. What does `includes("Mango",2)` mean?
+8. Does `includes()` modify the original array?
+9. Is `includes()` mutable or immutable?
+10. Can it return an index?
+
+---
+
+## Advanced
+
+11. Difference between `includes()` and `indexOf()`.
+12. Why is `includes()` useful?
+13. Why does it return `true` or `false`?
+14. Can it search duplicate elements?
+15. What happens if there are multiple matching elements?
+
+---
+
+## Scenario-Based
+
+16. Shopping website example.
+17. Hospital example.
+18. Banking example.
+19. React example.
+20. API example.

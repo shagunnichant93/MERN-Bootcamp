@@ -723,3 +723,93 @@ B) `includes()`
 C) Both
 
 D) Neither
+
+
+
+# MCQs
+
+### 1.
+
+`includes()` is a:
+
+A) Property
+
+B) Method
+
+C) Variable
+
+D) Object
+
+---
+
+### 2.
+
+Output?
+
+```javascript
+let arr = ["A","B","C"];
+
+console.log(arr.includes("B"));
+```
+
+A)
+
+```text
+0
+```
+
+B)
+
+```text
+true
+```
+
+C)
+
+```text
+1
+```
+
+D)
+
+```text
+false
+```
+
+---
+
+### 3.
+
+What does `includes()` return?
+
+A) Index
+
+B) Boolean
+
+C) Array
+
+D) String
+
+---
+
+### 4.
+
+Does `includes()` modify the original array?
+
+A) Yes
+
+B) No
+
+---
+
+### 5.
+
+Which method returns an index?
+
+A) `includes()`
+
+B) `indexOf()`
+
+C) Both
+
+D) Neither
