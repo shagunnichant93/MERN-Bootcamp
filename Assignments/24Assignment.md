@@ -813,3 +813,94 @@ B) `indexOf()`
 C) Both
 
 D) Neither
+
+
+---
+
+# MCQs
+
+### 1.
+
+`join()` is a:
+
+A) Property
+
+B) Method
+
+C) Variable
+
+D) Object
+
+---
+
+### 2.
+
+Output?
+
+```javascript
+let arr = ["A", "B", "C"];
+
+console.log(arr.join("-"));
+```
+
+A)
+
+```text
+ABC
+```
+
+B)
+
+```text
+A-B-C
+```
+
+C)
+
+```text
+A,B,C
+```
+
+D)
+
+```text
+Error
+```
+
+---
+
+### 3.
+
+What does `join()` return?
+
+A) Array
+
+B) Object
+
+C) String
+
+D) Boolean
+
+---
+
+### 4.
+
+Does `join()` modify the original array?
+
+A) Yes
+
+B) No
+
+---
+
+### 5.
+
+Which method converts an array into a string?
+
+A) `split()`
+
+B) `join()`
+
+C) `slice()`
+
+D) `splice()`

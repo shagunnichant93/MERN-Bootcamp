@@ -1528,3 +1528,46 @@ console.log(`Sum = ${a + b}`);
 18. Banking example.
 19. React example.
 20. API example.
+
+
+---
+
+# Interview Questions
+
+## Beginner
+
+1. What is `join()`?
+2. Is it a method or property?
+3. What does it return?
+4. Syntax of `join()`.
+5. What is the default separator?
+
+---
+
+## Intermediate
+
+6. How do you join using a space?
+7. How do you join using `-`?
+8. Does `join()` modify the original array?
+9. Is `join()` mutable or immutable?
+10. Can `join()` return an array?
+
+---
+
+## Advanced
+
+11. Difference between `join()` and `split()`.
+12. Why is `join()` useful?
+13. Why does it return a string?
+14. Can it use custom separators?
+15. What happens if the separator is an empty string?
+
+---
+
+## Scenario-Based
+
+16. Shopping website example.
+17. Hospital example.
+18. Banking example.
+19. React example.
+20. API example.
