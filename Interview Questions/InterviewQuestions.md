@@ -1658,3 +1658,42 @@ console.log(`Sum = ${a + b}`);
 18. Banking example.
 19. React example.
 20. API example.
+
+
+---
+
+# 🎯 Interview Questions
+
+Answer these **20 questions** like you've been doing.
+
+### Beginner
+
+1. What is `forEach()`?
+2. Is `forEach()` a method or property?
+3. What does `forEach()` do?
+4. What is the syntax of `forEach()`?
+5. What is the parameter passed to the callback?
+
+### Intermediate
+
+6. What is the index parameter in `forEach()`?
+7. Can `forEach()` access the original array?
+8. Does `forEach()` return a new array?
+9. What does `forEach()` return?
+10. Is `forEach()` a mutable method?
+
+### Comparison
+
+11. Difference between `forEach()` and `for` loop.
+12. Difference between `forEach()` and `map()`.
+13. Can we use `if` inside `forEach()`?
+14. Can we use `toUpperCase()` inside `forEach()`?
+15. Can we get the index using `forEach()`?
+
+### Real-world
+
+16. How can `forEach()` be used in a shopping website?
+17. How can it be used in a hospital system?
+18. How can it be used in a banking system?
+19. How can it be used in a React application?
+20. How can it be used while processing API data?

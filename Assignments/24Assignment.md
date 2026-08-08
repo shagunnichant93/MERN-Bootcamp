@@ -1099,3 +1099,60 @@ Is `sort()` mutable?
 A) No
 
 B) Yes
+
+
+# 📝 MCQs
+
+### 1. `forEach()` is a:
+
+A) Property
+B) Method
+C) Variable
+D) Object
+
+### 2. `forEach()` executes a function:
+
+A) Once
+B) For every array element
+C) Only for the first element
+D) Only for the last element
+
+### 3. What does `forEach()` normally return?
+
+A) Array
+B) String
+C) `undefined`
+D) Boolean
+
+### 4. Can `forEach()` receive the index?
+
+A) Yes
+B) No
+
+### 5. Which is correct?
+
+A)
+
+```javascript
+arr.forEach()
+```
+
+B)
+
+```javascript
+arr.forEach((item) => {
+    console.log(item);
+});
+```
+
+C)
+
+```javascript
+arr.forEach[item]
+```
+
+D)
+
+```javascript
+arr.foreach(item)
+```
