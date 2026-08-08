@@ -36,3 +36,49 @@
 * C) Three phases
 * D) Four phases
 
+
+
+# 📝 MCQ
+
+**1. What does `map()` return?**
+
+a) String
+b) New array
+c) Boolean
+d) Number
+
+**2. Does `map()` normally modify the original array?**
+
+a) Yes
+b) No
+c) Sometimes always
+d) Only for strings
+
+**3. Which method is mainly used to transform every element into a new array?**
+
+a) `forEach()`
+b) `map()`
+c) `pop()`
+d) `shift()`
+
+**4. What does this return?**
+
+```javascript
+let numbers = [1, 2, 3];
+
+let result = numbers.map((num) => {
+    return num * 2;
+});
+```
+
+a) `[1, 2, 3]`
+b) `[2, 4, 6]`
+c) `undefined`
+d) `6`
+
+**5. Which is commonly used in React to render a list from an array?**
+
+a) `pop()`
+b) `shift()`
+c) `map()`
+d) `reverse()`

@@ -1697,3 +1697,57 @@ Answer these **20 questions** like you've been doing.
 18. How can it be used in a banking system?
 19. How can it be used in a React application?
 20. How can it be used while processing API data?
+
+
+
+# 🎯 Your Interview Questions — `map()`
+
+Answer these **20 questions** in your own words, just like you've been doing.
+
+### Basic
+
+**1. What is `map()` in JavaScript?**
+
+**2. Is `map()` a method or property?**
+
+**3. What does `map()` return?**
+
+**4. What is the basic syntax of `map()`?**
+
+**5. What is the purpose of `return` inside `map()`?**
+
+### Understanding
+
+**6. Does `map()` modify the original array?**
+
+**7. Does `map()` execute the callback for every element?**
+
+**8. What happens if you don't return a value from the callback?**
+
+**9. Can `map()` receive an index?**
+
+**10. What is the difference between `map()` and `forEach()`?**
+
+### Comparison
+
+**11. Compare `map()` and `forEach()`.**
+
+**12. Why is `map()` commonly used in React?**
+
+**13. Can we use conditions inside `map()`?**
+
+**14. Can we transform numbers using `map()`?**
+
+**15. Can we transform strings using `map()`?**
+
+### Real-world
+
+**16. Give one real-world shopping example where `map()` can be used.**
+
+**17. Give one hospital-management example.**
+
+**18. Give one banking example.**
+
+**19. How can `map()` be useful in a React application?**
+
+**20. Explain `map()` in simple words as if you were answering an interviewer.**
