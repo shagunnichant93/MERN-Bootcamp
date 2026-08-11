@@ -1202,3 +1202,52 @@ a) `[10, 20]`
 b) `[20, 30]`
 c) `[30, 40]`
 d) `[10, 20, 30, 40]`
+
+
+
+# 🧠 MCQs
+
+### 1. What is the main purpose of `reduce()`?
+
+a) Find an element
+b) Remove an element
+c) Produce one final result from array elements
+d) Sort an array
+
+### 2. Which value stores the result during `reduce()`?
+
+a) index
+b) accumulator
+c) element
+d) array
+
+### 3. What does this return?
+
+```javascript
+let numbers = [10, 20, 30];
+
+numbers.reduce((sum, number) => {
+    return sum + number;
+}, 0);
+```
+
+a) `[60]`
+b) `30`
+c) `60`
+d) `undefined`
+
+### 4. Does `reduce()` modify the original array?
+
+a) Yes
+b) No
+c) Always
+d) Only for numbers
+
+### 5. Which method is best suited for calculating the total price of products?
+
+a) `find()`
+b) `filter()`
+c) `reduce()`
+d) `includes()`
+
+---

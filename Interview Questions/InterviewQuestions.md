@@ -1806,3 +1806,39 @@ Answer these **20 questions** in your own words.
 **19. How can `filter()` be useful in a React application?**
 
 **20. Explain `filter()` in simple words as if you were answering an interviewer.**
+
+
+---
+
+# 📝 20 Detailed Practice / Interview Questions
+
+Answer these in the same way you've been answering our previous topics.
+
+### Basic
+
+1. What is `reduce()`?
+2. Is `reduce()` a method or property?
+3. What does `reduce()` generally return?
+4. What is an accumulator?
+5. What is the purpose of the initial value?
+6. Write the basic syntax of `reduce()`.
+7. What happens to the accumulator during each iteration?
+8. Does `reduce()` modify the original array?
+9. Is `reduce()` mutable or immutable?
+10. Can `reduce()` be used to calculate a total?
+
+### Comparison
+
+11. Explain the difference between `reduce()` and `map()`.
+12. Explain the difference between `reduce()` and `filter()`.
+13. Explain the difference between `reduce()` and `find()`.
+14. Why would we use `reduce()` instead of a normal loop for calculating a total?
+15. Can `reduce()` work with an array of objects?
+
+### Real-world
+
+16. How can `reduce()` be used in a shopping cart?
+17. How can `reduce()` be used in a hospital management system?
+18. How can `reduce()` be used in a banking system?
+19. How can `reduce()` be useful when processing API data?
+20. Explain `reduce()` in your own words with a real-world example.
