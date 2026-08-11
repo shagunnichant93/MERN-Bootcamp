@@ -1156,3 +1156,49 @@ D)
 ```javascript
 arr.foreach(item)
 ```
+
+
+# 📝 MCQ
+
+### 1. What does `filter()` return?
+
+a) Boolean
+b) New array
+c) String
+d) Number
+
+### 2. What does the callback normally return?
+
+a) Array
+b) String
+c) Boolean condition
+d) Number
+
+### 3. If the callback returns `true`, what happens?
+
+a) Element is removed
+b) Element is included in the new array
+c) Original array is deleted
+d) Nothing happens
+
+### 4. Which method is used to select elements based on a condition?
+
+a) `map()`
+b) `push()`
+c) `filter()`
+d) `join()`
+
+### 5. What is the result?
+
+```javascript
+let numbers = [10, 20, 30, 40];
+
+let result = numbers.filter((num) => {
+    return num > 20;
+});
+```
+
+a) `[10, 20]`
+b) `[20, 30]`
+c) `[30, 40]`
+d) `[10, 20, 30, 40]`

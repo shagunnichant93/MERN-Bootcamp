@@ -1751,3 +1751,58 @@ Answer these **20 questions** in your own words, just like you've been doing.
 **19. How can `map()` be useful in a React application?**
 
 **20. Explain `map()` in simple words as if you were answering an interviewer.**
+
+
+---
+
+# 🎯 Your Interview Questions — `filter()`
+
+Answer these **20 questions** in your own words.
+
+### Basic
+
+**1. What is `filter()` in JavaScript?**
+
+**2. Is `filter()` a method or property?**
+
+**3. What does `filter()` return?**
+
+**4. What is the basic syntax of `filter()`?**
+
+**5. What should the callback function return?**
+
+### Understanding
+
+**6. What happens when the callback returns `true`?**
+
+**7. What happens when the callback returns `false`?**
+
+**8. Does `filter()` modify the original array?**
+
+**9. Can `filter()` receive an index?**
+
+**10. What happens if no elements satisfy the condition?**
+
+### Comparison
+
+**11. What is the difference between `map()` and `filter()`?**
+
+**12. What is the difference between `filter()` and `forEach()`?**
+
+**13. Can we use conditions inside `filter()`?**
+
+**14. Can `filter()` be used with numbers?**
+
+**15. Can `filter()` be used with strings?**
+
+### Real-world
+
+**16. Give one shopping website example where `filter()` can be used.**
+
+**17. Give one hospital-management example.**
+
+**18. Give one banking example.**
+
+**19. How can `filter()` be useful in a React application?**
+
+**20. Explain `filter()` in simple words as if you were answering an interviewer.**
