@@ -1842,3 +1842,41 @@ Answer these in the same way you've been answering our previous topics.
 18. How can `reduce()` be used in a banking system?
 19. How can `reduce()` be useful when processing API data?
 20. Explain `reduce()` in your own words with a real-world example.
+
+
+*****Objects***
+
+---
+
+# 📝 Interview / Practice Questions
+
+Answer these in detail, just like you did for Arrays.
+
+### Basic
+
+1. What is an Object in JavaScript?
+2. Why do we use Objects?
+3. Which brackets are used to create an Object?
+4. What is a property in an Object?
+5. What is a key?
+6. What is a value?
+7. Can an Object contain different data types?
+8. Can an Object contain multiple properties?
+9. Is an Object different from an Array?
+10. Give one real-world example of an Object.
+
+### Understanding
+
+11. Explain the difference between an Array and an Object.
+12. Why would you use an Object to represent an employee?
+13. What is the purpose of grouping related data inside an Object?
+14. Can an Object contain a number and a string at the same time?
+15. Can we store a Boolean value inside an Object?
+
+### Real-world
+
+16. How would you represent a product using an Object?
+17. How would you represent a patient using an Object?
+18. How would you represent a bank account using an Object?
+19. Why are Objects useful when working with API data?
+20. Explain Objects in your own words using a real-world example.
