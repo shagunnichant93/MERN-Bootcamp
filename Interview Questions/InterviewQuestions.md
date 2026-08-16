@@ -1880,3 +1880,73 @@ Answer these in detail, just like you did for Arrays.
 18. How would you represent a bank account using an Object?
 19. Why are Objects useful when working with API data?
 20. Explain Objects in your own words using a real-world example.
+
+
+
+# 📝 20 Detailed Practice / Interview Questions
+
+Answer these in the same format as before.
+
+### Basic
+
+1. How do you add a new property to an Object?
+2. Is adding a property an Object method?
+3. Which notation can be used to add a property?
+4. Write the syntax for adding a property using dot notation.
+5. Write the syntax for adding a property using bracket notation.
+6. Can we add multiple properties to an Object?
+7. Can we add a property to an empty Object?
+8. What happens if the property doesn't already exist?
+9. Does adding a property modify the original Object?
+10. Are JavaScript Objects mutable?
+
+### Understanding
+
+11. What is the difference between adding and updating a property?
+12. What happens when we use `student.course = "MERN"`?
+13. What happens when we use `student["course"] = "MERN"`?
+14. Why can bracket notation be useful when adding properties?
+15. What happens if the property name is stored in a variable?
+
+### Real-world
+
+16. How would you add a brand to a Product Object?
+17. How would you add a disease to a Patient Object?
+18. How would you add an account type to a Bank Account Object?
+19. Give a real-world situation where you might need to add a new property to an Object.
+20. Explain adding a property to an Object in your own words with a real-world example.
+
+
+
+# 📝 Practice Questions
+
+Answer these in detail, just like before.
+
+### Basic
+
+1. What is the `delete` operator used for in JavaScript Objects?
+2. Is `delete` a method or an operator?
+3. How do you delete a property using dot notation?
+4. How do you delete a property using bracket notation?
+5. What happens to the property after using `delete`?
+6. Can we delete multiple properties from an Object?
+7. Can we delete a property using a variable?
+8. What happens if we try to access a property after deleting it?
+9. Does `delete` modify the original Object?
+10. Are Objects mutable?
+
+### Understanding
+
+11. What is the difference between updating and deleting a property?
+12. What happens when we write `delete student.age`?
+13. What happens when we write `delete student["age"]`?
+14. Why is bracket notation useful when deleting a property?
+15. What happens when the property name is stored in a variable and we use `delete object[key]`?
+
+### Real-world Examples
+
+16. How would you delete the `brand` property from a product?
+17. How would you delete the `disease` property from a patient?
+18. How would you delete the `accountType` property from a bank account?
+19. Give a real-world example where an Object property might need to be deleted.
+20. Explain the `delete` operator in your own words with a real-world example.
