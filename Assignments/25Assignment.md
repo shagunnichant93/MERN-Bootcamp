@@ -265,3 +265,98 @@ a) Entire Object is deleted
 b) Object becomes an Array
 c) Only that property is removed
 d) Object becomes undefined
+
+
+
+# 🧠 MCQs
+
+### 1. What does this return?
+
+```javascript
+"name" in student
+```
+
+a) `"name"`
+b) true/false
+c) student name
+d) undefined
+
+### 2. Which is correct?
+
+a)
+
+```javascript
+student.in("name");
+```
+
+b)
+
+```javascript
+"name" in student;
+```
+
+c)
+
+```javascript
+student -> "name";
+```
+
+d)
+
+```javascript
+check student.name;
+```
+
+### 3. What does this do?
+
+```javascript
+student.hasOwnProperty("age")
+```
+
+a) Deletes age
+b) Updates age
+c) Checks whether age belongs directly to student
+d) Returns the age
+
+### 4. If `city` doesn't exist, what does this return?
+
+```javascript
+"city" in student
+```
+
+a) true
+b) false
+c) null
+d) city
+
+### 5. Which is useful for a dynamic property?
+
+```javascript
+let key = "price";
+```
+
+a)
+
+```javascript
+key in product
+```
+
+b)
+
+```javascript
+product.key
+```
+
+c)
+
+```javascript
+product.price.key
+```
+
+d)
+
+```javascript
+delete key
+```
+
+---

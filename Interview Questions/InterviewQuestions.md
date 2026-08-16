@@ -1950,3 +1950,39 @@ Answer these in detail, just like before.
 18. How would you delete the `accountType` property from a bank account?
 19. Give a real-world example where an Object property might need to be deleted.
 20. Explain the `delete` operator in your own words with a real-world example.
+
+
+---
+
+# 📝 Practice Questions
+
+Answer these in detail like you've been doing.
+
+### Basic
+
+1. What is the `in` operator used for with Objects?
+2. Is `in` a method or an operator?
+3. What does `"name" in student` check?
+4. What does `in` return?
+5. What happens if the property exists?
+6. What happens if the property doesn't exist?
+7. How do you check whether `age` exists in `student`?
+8. How do you check whether `price` exists in `product`?
+9. Can we use a variable with the `in` operator?
+10. Does checking a property modify the Object?
+
+### Understanding
+
+11. What is `hasOwnProperty()` used for?
+12. What does `student.hasOwnProperty("age")` return?
+13. What does `student.hasOwnProperty("city")` return if city doesn't exist?
+14. What is the basic difference between `in` and `hasOwnProperty()`?
+15. Why is checking property existence useful instead of simply accessing the property?
+
+### Real-world
+
+16. How would you check whether a product has a `brand` property?
+17. How would you check whether a patient has a `disease` property?
+18. How would you check whether a bank account has an `accountType` property?
+19. Give a real-world example where checking whether a property exists would be useful.
+20. Explain property existence checking in your own words.
