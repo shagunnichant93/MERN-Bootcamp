@@ -1986,3 +1986,76 @@ Answer these in detail like you've been doing.
 18. How would you check whether a bank account has an `accountType` property?
 19. Give a real-world example where checking whether a property exists would be useful.
 20. Explain property existence checking in your own words.
+
+
+
+# 12. Interview Question 🎯
+
+### Q1. What is a method in JavaScript?
+
+**Answer:**
+
+A method is a function defined as a property of an object. It represents an action or behavior associated with that object.
+
+Example:
+
+```javascript
+let user = {
+    name: "Rahul",
+
+    greet() {
+        console.log("Hello");
+    }
+};
+
+user.greet();
+```
+
+Here, `greet()` is a method of the `user` object.
+
+---
+
+### Q2. What is the difference between a property and a method?
+
+| Property        | Method             |
+| --------------- | ------------------ |
+| Stores data     | Performs an action |
+| Usually a value | Usually a function |
+| `name: "Rahul"` | `greet() {}`       |
+| `user.name`     | `user.greet()`     |
+
+---
+
+# 13. Interview Question — Output Prediction 🔥
+
+What will be the output?
+
+```javascript
+let product = {
+    price: 100,
+    quantity: 3,
+
+    getTotal() {
+        return this.price * this.quantity;
+    }
+};
+
+console.log(product.getTotal());
+```
+
+Think about it before looking at the answer.
+
+### Answer:
+
+```text
+300
+```
+
+Because:
+
+```text
+this.price     → 100
+this.quantity  → 3
+
+100 × 3 = 300
+```
