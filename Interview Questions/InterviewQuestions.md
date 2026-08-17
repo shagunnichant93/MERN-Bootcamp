@@ -2059,3 +2059,107 @@ this.quantity  → 3
 
 100 × 3 = 300
 ```
+
+
+---
+
+# 🎯 Interview Questions
+
+### Q1. What is a nested object?
+
+**Answer:**
+
+A nested object is an object stored as a property inside another object.
+
+Example:
+
+```javascript
+let user = {
+    name: "Rahul",
+
+    address: {
+        city: "Delhi"
+    }
+};
+```
+
+Here, `address` is a nested object.
+
+---
+
+### Q2. How do you access a property of a nested object?
+
+Using the dot operator:
+
+```javascript
+user.address.city;
+```
+
+---
+
+### Q3. Can nested objects contain methods?
+
+**Yes.**
+
+```javascript
+let user = {
+    address: {
+        city: "Delhi",
+
+        showCity() {
+            console.log(this.city);
+        }
+    }
+};
+```
+
+---
+
+### Q4. Can you update a nested property?
+
+Yes:
+
+```javascript
+user.address.city = "Mumbai";
+```
+
+---
+
+### Q5. Can you delete a nested property?
+
+Yes:
+
+```javascript
+delete user.address.city;
+```
+
+---
+
+# 🔥 Scenario-Based Interview Question
+
+### Question
+
+You receive this user object:
+
+```javascript
+let user = {
+    name: "Amit",
+
+    address: {
+        city: "Delhi",
+        pincode: 110001
+    }
+};
+```
+
+You need to change the city to `"Mumbai"`.
+
+What code would you write?
+
+### Answer
+
+```javascript
+user.address.city = "Mumbai";
+```
+
+---

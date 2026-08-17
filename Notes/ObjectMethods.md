@@ -1,677 +1,650 @@
-Awesome! 🎉
+# 📘 Module 6 — Objects
 
-Welcome to **Module 4 — Arrays**.
+## Topic 8: Methods in Objects
 
-This is one of the **most important modules** in JavaScript because arrays are used **everywhere**:
-
-* ⚛️ React (displaying lists of products, users, etc.)
-* 🟢 Node.js (processing data)
-* 🍃 MongoDB (documents often contain arrays)
-* 🌐 APIs (JSON responses are full of arrays)
+Great. We completed the `in` operator. Now we move to the **next topic: Methods**.
 
 ---
 
-# 📚 Module 4 — Arrays
+## 1. What is a Method?
 
-# Topic 1 — Array Introduction
+A **method is a function stored inside an object**.
+
+You already know what a function is:
+
+```javascript
+function greet() {
+    console.log("Hello");
+}
+
+greet();
+```
+
+Now we can put that function inside an object:
+
+```javascript
+let student = {
+    name: "Rahul",
+
+    greet: function() {
+        console.log("Hello Rahul");
+    }
+};
+
+student.greet();
+```
+
+### Output:
+
+```text
+Hello Rahul
+```
+
+So:
+
+> **Function inside an object = Method**
 
 ---
 
-# Lesson Flow
+# 2. Real-Life Example 🏦
 
-1. What is an Array?
-2. Why do we need Arrays?
-3. Syntax
-4. Accessing Elements
-5. Real-Life Examples
-6. Common Mistakes
-7. Coding Assignments
-8. Mini Project
-9. Interview Questions
-10. MCQs
-11. Notes
-12. Git Practice
+Imagine a bank account.
+
+A bank account has **data**:
+
+```text
+accountNumber
+name
+balance
+```
+
+It also has **actions**:
+
+```text
+deposit()
+withdraw()
+checkBalance()
+```
+
+In JavaScript:
+
+```javascript
+let account = {
+    accountNumber: 101,
+    name: "Rahul",
+    balance: 5000,
+
+    deposit: function() {
+        console.log("Money deposited");
+    },
+
+    withdraw: function() {
+        console.log("Money withdrawn");
+    },
+
+    checkBalance: function() {
+        console.log("Balance checked");
+    }
+};
+```
+
+Here:
+
+* `accountNumber` → property
+* `name` → property
+* `balance` → property
+* `deposit()` → method
+* `withdraw()` → method
+* `checkBalance()` → method
 
 ---
 
-# 1. What is an Array?
+# 3. How to Call a Method?
 
-An **Array** is a data structure used to store **multiple values in a single variable**.
-
-Instead of creating many variables:
+We use the **dot operator `.`**.
 
 ```javascript
-let student1 = "John";
-let student2 = "Rahul";
-let student3 = "Priya";
-let student4 = "Shagun";
+account.deposit();
 ```
 
-We can store them together:
-
 ```javascript
-let students = ["John", "Rahul", "Priya", "Shagun"];
+account.withdraw();
 ```
 
-Now all student names are stored in one variable called `students`.
-
----
-
-# 2. Why do we need Arrays?
-
-Imagine a classroom with **100 students**.
-
-Without arrays:
-
 ```javascript
-let student1 = "John";
-let student2 = "Rahul";
-let student3 = "Priya";
-...
-let student100 = "Amit";
+account.checkBalance();
 ```
 
-Very difficult to manage.
-
-With an array:
+### Example
 
 ```javascript
-let students = [
-    "John",
-    "Rahul",
-    "Priya",
-    "Amit"
-];
-```
+let student = {
+    name: "Amit",
 
-Much cleaner and easier.
+    greet: function() {
+        console.log("Hello Student");
+    }
+};
 
----
-
-# 🏦 Real-Life Example 1 — Bank
-
-A bank has multiple account numbers.
-
-```javascript
-let accounts = [
-    "ACC1001",
-    "ACC1002",
-    "ACC1003",
-    "ACC1004"
-];
-```
-
-Instead of four separate variables, one array stores them all.
-
----
-
-# 🏥 Real-Life Example 2 — Hospital
-
-```javascript
-let patients = [
-    "Rahul",
-    "Amit",
-    "Priya",
-    "John"
-];
-```
-
----
-
-# 🍕 Real-Life Example 3 — Restaurant
-
-```javascript
-let menu = [
-    "Pizza",
-    "Burger",
-    "Pasta",
-    "Sandwich"
-];
-```
-
----
-
-# 🎬 Real-Life Example 4 — Movies
-
-```javascript
-let movies = [
-    "Inception",
-    "Avatar",
-    "Spider-Man",
-    "Interstellar"
-];
-```
-
----
-
-# 🛒 Real-Life Example 5 — Shopping
-
-```javascript
-let cart = [
-    "Laptop",
-    "Mouse",
-    "Keyboard",
-    "Headphones"
-];
-```
-
----
-
-# 3. Syntax
-
-```javascript
-let arrayName = [
-    value1,
-    value2,
-    value3
-];
-```
-
-Example:
-
-```javascript
-let fruits = [
-    "Apple",
-    "Mango",
-    "Banana"
-];
-```
-
----
-
-# 4. Array Rules
-
-## Rule 1
-
-Arrays use **square brackets**.
-
-```javascript
-[]
-```
-
-✅ Correct
-
----
-
-## Rule 2
-
-Values are separated by commas.
-
-```javascript
-["A", "B", "C"]
-```
-
----
-
-## Rule 3
-
-Arrays can store different data types.
-
-```javascript
-let data = [
-    "John",
-    25,
-    true
-];
+student.greet();
 ```
 
 Output:
 
 ```text
-["John", 25, true]
+Hello Student
 ```
 
 ---
 
-## Rule 4
+# 4. Method Can Use Object Properties
 
-An array can also be empty.
-
-```javascript
-let cart = [];
-```
-
----
-
-# 5. Accessing Array Elements
-
-Every element has an **index**.
+This is where methods become really useful.
 
 ```javascript
-let fruits = [
-    "Apple",
-    "Mango",
-    "Banana"
-];
+let student = {
+    name: "Amit",
+    age: 20,
+
+    introduce: function() {
+        console.log("My name is " + this.name);
+        console.log("My age is " + this.age);
+    }
+};
+
+student.introduce();
 ```
 
-| Index | Value  |
-| ----: | ------ |
-|     0 | Apple  |
-|     1 | Mango  |
-|     2 | Banana |
-
-Remember:
-
-> **JavaScript arrays always start from index 0.**
-
-Access elements like this:
-
-```javascript
-console.log(fruits[0]);
-```
-
-Output
+Output:
 
 ```text
-Apple
+My name is Amit
+My age is 20
 ```
+
+Notice this:
+
+```javascript
+this.name
+```
+
+and:
+
+```javascript
+this.age
+```
+
+We'll study `this` **in much more depth later** in Advanced JavaScript.
+
+For now, remember:
+
+> `this` refers to the object that is calling the method.
+
+Here:
+
+```javascript
+student.introduce();
+```
+
+So `this` refers to `student`.
 
 ---
 
+# 5. Another Real-World Example 🍔
+
+Imagine a food-ordering application.
+
 ```javascript
-console.log(fruits[1]);
+let order = {
+    item: "Pizza",
+    price: 500,
+    quantity: 2,
+
+    calculateTotal: function() {
+        console.log(this.price * this.quantity);
+    }
+};
+
+order.calculateTotal();
 ```
 
-Output
+Output:
 
 ```text
-Mango
+1000
 ```
 
----
-
-```javascript
-console.log(fruits[2]);
-```
-
-Output
+### How it works
 
 ```text
-Banana
+order
+ │
+ ├── item → "Pizza"
+ ├── price → 500
+ ├── quantity → 2
+ │
+ └── calculateTotal() → method
+          │
+          └── this.price * this.quantity
+                    ↓
+                  500 × 2
+                    ↓
+                  1000
 ```
+
+This is one of the main reasons we use methods inside objects.
+
+The **data and the operation performed on that data can stay together**.
 
 ---
 
-# 🎯 Real-Life Analogy
+# 6. Modern Method Syntax ⭐
 
-Imagine a **train**.
+There is a shorter way to create methods.
 
+Instead of:
+
+```javascript
+let student = {
+    name: "Rahul",
+
+    greet: function() {
+        console.log("Hello");
+    }
+};
 ```
-Engine | Coach 1 | Coach 2 | Coach 3
+
+We can write:
+
+```javascript
+let student = {
+    name: "Rahul",
+
+    greet() {
+        console.log("Hello");
+    }
+};
 ```
 
-JavaScript numbers the coaches like this:
+Both are methods.
 
-| Coach   | Index |
-| ------- | ----: |
-| Engine  |     0 |
-| Coach 1 |     1 |
-| Coach 2 |     2 |
-| Coach 3 |     3 |
+### Old style
 
-To access Coach 2, JavaScript uses its **index**.
+```javascript
+greet: function() {
+    console.log("Hello");
+}
+```
 
-Arrays work the same way.
+### Modern style
+
+```javascript
+greet() {
+    console.log("Hello");
+}
+```
+
+You will see the **modern syntax very frequently** in real JavaScript applications.
 
 ---
 
-# 6. Common Mistakes
+# 7. Method With Parameters
 
-### ❌ Mistake 1
-
-Using parentheses.
+A method can also accept parameters.
 
 ```javascript
-let fruits = ("Apple", "Mango");
+let calculator = {
+    add: function(a, b) {
+        console.log(a + b);
+    }
+};
+
+calculator.add(10, 20);
 ```
 
-✅ Correct
-
-```javascript
-let fruits = ["Apple", "Mango"];
-```
-
----
-
-### ❌ Mistake 2
-
-Forgetting commas.
-
-```javascript
-["Apple" "Mango"]
-```
-
-✅ Correct
-
-```javascript
-["Apple", "Mango"]
-```
-
----
-
-### ❌ Mistake 3
-
-Wrong index.
-
-```javascript
-let fruits = ["Apple", "Mango"];
-
-console.log(fruits[2]);
-```
-
-Output
+Output:
 
 ```text
-undefined
+30
 ```
 
-Because only index **0** and **1** exist.
-
----
-
-# 7. Coding Assignments (10)
-
-Create **one file** named:
-
-**`exampleArrays.js`**
-
-### 1.
-
-Create an array of students.
+Modern syntax:
 
 ```javascript
-["John", "Rahul", "Priya", "Shagun"]
-```
+let calculator = {
+    add(a, b) {
+        console.log(a + b);
+    }
+};
 
-Print the entire array.
+calculator.add(10, 20);
+```
 
 ---
 
-### 2.
+# 8. Method Can Return a Value
 
-Create an array of fruits.
+A method can use `return`.
 
 ```javascript
-["Apple", "Mango", "Banana", "Orange"]
+let calculator = {
+    add(a, b) {
+        return a + b;
+    }
+};
+
+let result = calculator.add(10, 20);
+
+console.log(result);
 ```
 
-Print the entire array.
-
----
-
-### 3.
-
-Create an array of bank accounts.
-
-```javascript
-["ACC1001", "ACC1002", "ACC1003"]
-```
-
-Print the array.
-
----
-
-### 4.
-
-Create an array of hospital patients.
-
-```javascript
-["Rahul", "Amit", "Priya"]
-```
-
----
-
-### 5.
-
-Create an array of products.
-
-```javascript
-["Laptop", "Mouse", "Keyboard"]
-```
-
----
-
-### 6.
-
-Create an array of cities.
-
-```javascript
-["Delhi", "Mumbai", "Pune"]
-```
-
----
-
-### 7.
-
-Create an array containing different data types.
-
-```javascript
-["John", 25, true]
-```
-
----
-
-### 8.
-
-Create an empty array.
-
-Print it.
-
----
-
-### 9.
-
-Print the **first fruit**.
-
-Expected Output:
+Output:
 
 ```text
-Apple
+30
 ```
 
----
-
-### 10.
-
-Print the **second student**.
-
-Expected Output:
+Think of it like:
 
 ```text
-Rahul
+calculator.add(10, 20)
+          ↓
+       10 + 20
+          ↓
+         30
+          ↓
+       return
+          ↓
+       result
 ```
 
 ---
 
-# 8. Mini Project
+# 9. Important Difference
 
-Create:
-
-**`shoppingCart.js`**
-
-Store:
+Don't confuse **property** and **method**.
 
 ```javascript
-let cart = [
-    "Laptop",
-    "Mouse",
-    "Keyboard",
-    "Headphones"
-];
+let student = {
+    name: "Rahul",
+    age: 20,
+
+    greet() {
+        console.log("Hello");
+    }
+};
 ```
 
-Print:
-
-```text
-Shopping Cart:
-Laptop
-Mouse
-Keyboard
-Headphones
-```
-
-(Hint: Print each item using its index.)
-
----
-
-# 9. Interview Questions
-
-## Beginner
-
-1. What is an array?
-2. Why do we use arrays?
-3. Which brackets are used to create an array?
-4. Can an array store multiple values?
-5. Can an array store different data types?
-
----
-
-## Intermediate
-
-6. What is an index in an array?
-7. From which index does a JavaScript array start?
-8. What is the index of the first element?
-9. What happens if we access an index that doesn't exist?
-10. Can an array be empty?
-
----
-
-## Advanced
-
-11. Is an array mutable or immutable?
-12. Can arrays contain other arrays?
-13. Can arrays contain objects?
-14. How do you access the third element?
-15. How do you access the last element if you know the array length?
-
----
-
-## Scenario-Based
-
-16. Why are arrays useful in a shopping website?
-17. Why are arrays useful in a hospital system?
-18. Give four real-world examples where arrays are used.
-19. Why are arrays important in React?
-20. Why are arrays important in APIs?
-
----
-
-# 10. MCQs
-
-### 1.
-
-An array is used to:
-
-A) Store one value
-
-B) Store multiple values
-
-C) Store only numbers
-
-D) Store only strings
-
----
-
-### 2.
-
-Which brackets are used for arrays?
-
-A) `()`
-
-B) `{}`
-
-C) `[]`
-
-D) `<>`
-
----
-
-### 3.
-
-What is the first index of an array?
-
-A) 1
-
-B) 0
-
-C) -1
-
-D) 10
-
----
-
-### 4.
-
-Output?
+Here:
 
 ```javascript
-let fruits = ["Apple", "Mango"];
-console.log(fruits[1]);
+student.name
 ```
 
-A)
+is a **property**.
 
-```text
-Apple
+```javascript
+student.age
 ```
 
-B)
+is a **property**.
 
-```text
-Mango
+But:
+
+```javascript
+student.greet()
 ```
 
-C)
+is a **method**.
+
+### Easy memory trick 🧠
+
+> **Property = information/data**
+> **Method = action/behavior**
+
+Example:
 
 ```text
-undefined
-```
-
-D)
-
-```text
-Error
+Car
+│
+├── brand → "Toyota"       Property
+├── color → "Red"          Property
+├── speed → 100            Property
+│
+├── start()                Method
+├── stop()                 Method
+└── accelerate()           Method
 ```
 
 ---
 
-### 5.
+# 10. Practical Example — User Profile 👤
 
-Can arrays store different data types?
+```javascript
+let user = {
+    name: "Shagun",
+    age: 30,
+    city: "Delhi",
 
-A) No
+    showProfile() {
+        console.log("Name: " + this.name);
+        console.log("Age: " + this.age);
+        console.log("City: " + this.city);
+    }
+};
 
-B) Yes
+user.showProfile();
+```
 
----
+Output:
 
-# 11. Notes (`Arrays.md`)
-
-Add:
-
-```md
-# Arrays
-
-- Stores multiple values.
-- Uses square brackets [].
-- Index starts from 0.
-- Values are separated by commas.
-- Arrays can store different data types.
-- Arrays can be empty.
+```text
+Name: Shagun
+Age: 30
+City: Delhi
 ```
 
 ---
 
-# 12. Git Practice
+# 11. Practical Example — Shopping Cart 🛒
 
-After completing everything:
+```javascript
+let product = {
+    name: "Laptop",
+    price: 50000,
+    quantity: 2,
 
-```bash
-git status
-git add .
-git commit -m "Completed JavaScript Arrays Introduction"
-git push
+    getTotal() {
+        return this.price * this.quantity;
+    }
+};
+
+console.log(product.getTotal());
+```
+
+Output:
+
+```text
+100000
+```
+
+This is closer to how objects are used in real applications.
+
+---
+
+# 12. Interview Question 🎯
+
+### Q1. What is a method in JavaScript?
+
+**Answer:**
+
+A method is a function defined as a property of an object. It represents an action or behavior associated with that object.
+
+Example:
+
+```javascript
+let user = {
+    name: "Rahul",
+
+    greet() {
+        console.log("Hello");
+    }
+};
+
+user.greet();
+```
+
+Here, `greet()` is a method of the `user` object.
+
+---
+
+### Q2. What is the difference between a property and a method?
+
+| Property        | Method             |
+| --------------- | ------------------ |
+| Stores data     | Performs an action |
+| Usually a value | Usually a function |
+| `name: "Rahul"` | `greet() {}`       |
+| `user.name`     | `user.greet()`     |
+
+---
+
+# 13. Interview Question — Output Prediction 🔥
+
+What will be the output?
+
+```javascript
+let product = {
+    price: 100,
+    quantity: 3,
+
+    getTotal() {
+        return this.price * this.quantity;
+    }
+};
+
+console.log(product.getTotal());
+```
+
+Think about it before looking at the answer.
+
+### Answer:
+
+```text
+300
+```
+
+Because:
+
+```text
+this.price     → 100
+this.quantity  → 3
+
+100 × 3 = 300
+```
+
+---
+
+# 14. Your Hands-On Exercise 💻
+
+Create an object called `employee`.
+
+It should have:
+
+```text
+name
+salary
+department
+```
+
+And one method:
+
+```text
+showDetails()
+```
+
+The method should print:
+
+```text
+Name: ...
+Salary: ...
+Department: ...
+```
+
+For example:
+
+```javascript
+let employee = {
+    // your code here
+};
+```
+
+### 🎯 Challenge 2
+
+Create a `bankAccount` object with:
+
+```text
+accountHolder
+balance
+```
+
+And these methods:
+
+```text
+deposit(amount)
+withdraw(amount)
+checkBalance()
+```
+
+For example:
+
+```javascript
+account.deposit(1000);
+account.withdraw(500);
+account.checkBalance();
+```
+
+Try both exercises **without looking for the solution first**.
+
+---
+
+## 📝 Notes for `Notes/JavaScript/Objects`
+
+Remember these core points:
+
+```text
+Object
+   ↓
+Properties → Data
+Methods    → Actions
+```
+
+```javascript
+let object = {
+    property: value,
+
+    method() {
+        // action
+    }
+};
+```
+
+Call a method:
+
+```javascript
+object.method();
+```
+
+Access a property:
+
+```javascript
+object.property;
+```
+
+Use object data inside a method:
+
+```javascript
+this.property
 ```
 
 ---

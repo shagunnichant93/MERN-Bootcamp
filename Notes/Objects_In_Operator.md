@@ -1,677 +1,726 @@
-Awesome! 🎉
+# 📘 JavaScript Objects — Topic 6: Checking Whether a Property Exists
 
-Welcome to **Module 4 — Arrays**.
+You've completed:
 
-This is one of the **most important modules** in JavaScript because arrays are used **everywhere**:
+✅ Creating Objects
+✅ Accessing Properties
+✅ Adding Properties
+✅ Updating Properties
+✅ Deleting Properties
 
-* ⚛️ React (displaying lists of products, users, etc.)
-* 🟢 Node.js (processing data)
-* 🍃 MongoDB (documents often contain arrays)
-* 🌐 APIs (JSON responses are full of arrays)
-
----
-
-# 📚 Module 4 — Arrays
-
-# Topic 1 — Array Introduction
+Now we'll learn how to **check whether a property exists inside an Object**.
 
 ---
 
-# Lesson Flow
+# 🧒 Easy Explanation
 
-1. What is an Array?
-2. Why do we need Arrays?
-3. Syntax
-4. Accessing Elements
-5. Real-Life Examples
-6. Common Mistakes
-7. Coding Assignments
-8. Mini Project
-9. Interview Questions
-10. MCQs
-11. Notes
-12. Git Practice
-
----
-
-# 1. What is an Array?
-
-An **Array** is a data structure used to store **multiple values in a single variable**.
-
-Instead of creating many variables:
+Imagine you have a student:
 
 ```javascript
-let student1 = "John";
-let student2 = "Rahul";
-let student3 = "Priya";
-let student4 = "Shagun";
+let student = {
+    name: "Shagun",
+    age: 25,
+    course: "MERN"
+};
 ```
 
-We can store them together:
+Now someone asks:
 
-```javascript
-let students = ["John", "Rahul", "Priya", "Shagun"];
-```
+> "Does this student have a `course` property?"
 
-Now all student names are stored in one variable called `students`.
+We need to check.
 
----
-
-# 2. Why do we need Arrays?
-
-Imagine a classroom with **100 students**.
-
-Without arrays:
-
-```javascript
-let student1 = "John";
-let student2 = "Rahul";
-let student3 = "Priya";
-...
-let student100 = "Amit";
-```
-
-Very difficult to manage.
-
-With an array:
-
-```javascript
-let students = [
-    "John",
-    "Rahul",
-    "Priya",
-    "Amit"
-];
-```
-
-Much cleaner and easier.
+JavaScript gives us ways to do this.
 
 ---
 
-# 🏦 Real-Life Example 1 — Bank
+# 1. Using the `in` Operator ⭐
 
-A bank has multiple account numbers.
+The easiest way is:
 
 ```javascript
-let accounts = [
-    "ACC1001",
-    "ACC1002",
-    "ACC1003",
-    "ACC1004"
-];
+"course" in student
 ```
 
-Instead of four separate variables, one array stores them all.
+Result:
+
+```text
+true
+```
+
+Because `course` exists.
+
+But:
+
+```javascript
+"city" in student
+```
+
+Result:
+
+```text
+false
+```
+
+Because `city` doesn't exist.
 
 ---
 
-# 🏥 Real-Life Example 2 — Hospital
+# 2. Easy Way to Remember
+
+Think of:
 
 ```javascript
-let patients = [
-    "Rahul",
-    "Amit",
-    "Priya",
-    "John"
-];
+"course" in student
+```
+
+as asking:
+
+> **"Is `course` inside `student`?"**
+
+If yes:
+
+```text
+true
+```
+
+If no:
+
+```text
+false
 ```
 
 ---
 
-# 🍕 Real-Life Example 3 — Restaurant
+# 3. Example with Product 🛒
 
 ```javascript
-let menu = [
-    "Pizza",
-    "Burger",
-    "Pasta",
-    "Sandwich"
-];
-```
+let product = {
+    name: "Laptop",
+    price: 65000,
+    brand: "HP"
+};
 
----
-
-# 🎬 Real-Life Example 4 — Movies
-
-```javascript
-let movies = [
-    "Inception",
-    "Avatar",
-    "Spider-Man",
-    "Interstellar"
-];
-```
-
----
-
-# 🛒 Real-Life Example 5 — Shopping
-
-```javascript
-let cart = [
-    "Laptop",
-    "Mouse",
-    "Keyboard",
-    "Headphones"
-];
-```
-
----
-
-# 3. Syntax
-
-```javascript
-let arrayName = [
-    value1,
-    value2,
-    value3
-];
-```
-
-Example:
-
-```javascript
-let fruits = [
-    "Apple",
-    "Mango",
-    "Banana"
-];
-```
-
----
-
-# 4. Array Rules
-
-## Rule 1
-
-Arrays use **square brackets**.
-
-```javascript
-[]
-```
-
-✅ Correct
-
----
-
-## Rule 2
-
-Values are separated by commas.
-
-```javascript
-["A", "B", "C"]
-```
-
----
-
-## Rule 3
-
-Arrays can store different data types.
-
-```javascript
-let data = [
-    "John",
-    25,
-    true
-];
+console.log("price" in product);
+console.log("category" in product);
 ```
 
 Output:
 
 ```text
-["John", 25, true]
+true
+false
+```
+
+Because:
+
+```text
+price     → ✅ exists
+category  → ❌ doesn't exist
 ```
 
 ---
 
-## Rule 4
+# 4. Using a Variable ⭐
 
-An array can also be empty.
+Suppose:
 
 ```javascript
-let cart = [];
+let key = "price";
+```
+
+You can do:
+
+```javascript
+console.log(key in product);
+```
+
+Output:
+
+```text
+true
+```
+
+This is useful when the property name is **dynamic**.
+
+---
+
+# 5. `hasOwnProperty()` ⭐
+
+Another way is:
+
+```javascript
+student.hasOwnProperty("age")
+```
+
+It returns:
+
+```text
+true
+```
+
+And:
+
+```javascript
+student.hasOwnProperty("city")
+```
+
+returns:
+
+```text
+false
+```
+
+So:
+
+```javascript
+"age" in student
+```
+
+and:
+
+```javascript
+student.hasOwnProperty("age")
+```
+
+can both tell us whether the property exists.
+
+---
+
+# 6. `in` vs `hasOwnProperty()`
+
+For now, remember this simple difference:
+
+### `in`
+
+```javascript
+"age" in student
+```
+
+Checks whether the property exists **in the object or its prototype chain**.
+
+### `hasOwnProperty()`
+
+```javascript
+student.hasOwnProperty("age")
+```
+
+Checks whether the property belongs **directly to that object**.
+
+For your beginner-level work, you'll mostly see:
+
+```javascript
+"property" in object
+```
+
+and:
+
+```javascript
+object.hasOwnProperty("property")
 ```
 
 ---
 
-# 5. Accessing Array Elements
+# 7. Why Not Just Use `student.age`?
 
-Every element has an **index**.
+You might think:
 
 ```javascript
-let fruits = [
-    "Apple",
-    "Mango",
-    "Banana"
-];
+student.age
 ```
 
-| Index | Value  |
-| ----: | ------ |
-|     0 | Apple  |
-|     1 | Mango  |
-|     2 | Banana |
+If it gives a value, doesn't that mean the property exists?
+
+Not always.
+
+Consider:
+
+```javascript
+let student = {
+    name: "Shagun",
+    age: undefined
+};
+```
+
+Now:
+
+```javascript
+console.log(student.age);
+```
+
+gives:
+
+```text
+undefined
+```
+
+But `age` **does exist**.
+
+That's why property-existence checks are useful.
+
+```javascript
+"age" in student
+```
+
+gives:
+
+```text
+true
+```
+
+---
+
+# 8. Real-World Example — Product 🛒
+
+Imagine an API gives us:
+
+```javascript
+let product = {
+    name: "Laptop",
+    price: 65000,
+    brand: "HP"
+};
+```
+
+Before displaying a category:
+
+```javascript
+if ("category" in product) {
+    console.log(product.category);
+} else {
+    console.log("Category not available");
+}
+```
+
+Output:
+
+```text
+Category not available
+```
+
+This prevents us from blindly assuming that every product has every property.
+
+---
+
+# 9. Real-World Example — Patient 🏥
+
+```javascript
+let patient = {
+    id: "PAT101",
+    name: "Rahul",
+    age: 35,
+    roomNo: 205
+};
+```
+
+Check whether disease information exists:
+
+```javascript
+if ("disease" in patient) {
+    console.log("Disease information available");
+} else {
+    console.log("Disease information not available");
+}
+```
+
+Output:
+
+```text
+Disease information not available
+```
+
+---
+
+# 10. Real-World Example — Bank Account 🏦
+
+```javascript
+let account = {
+    accountNo: "ACC1001",
+    customer: "Amit",
+    balance: 50000
+};
+```
+
+Check:
+
+```javascript
+if ("accountType" in account) {
+    console.log("Account type available");
+} else {
+    console.log("Account type not available");
+}
+```
+
+Output:
+
+```text
+Account type not available
+```
+
+---
+
+# 11. Dynamic Property Checking ⭐⭐⭐
+
+This is especially important because you've already learned dynamic properties.
+
+```javascript
+let product = {
+    name: "Laptop",
+    price: 65000,
+    brand: "HP"
+};
+
+let key = "price";
+
+if (key in product) {
+    console.log("Property exists");
+}
+```
+
+Output:
+
+```text
+Property exists
+```
+
+If:
+
+```javascript
+let key = "category";
+```
+
+then:
+
+```text
+Property does not exist
+```
+
+---
+
+# 12. `in` Returns Boolean
 
 Remember:
 
-> **JavaScript arrays always start from index 0.**
-
-Access elements like this:
-
 ```javascript
-console.log(fruits[0]);
+"price" in product
 ```
 
-Output
+doesn't return the price.
+
+It returns:
 
 ```text
-Apple
+true
 ```
 
----
+Similarly:
 
 ```javascript
-console.log(fruits[1]);
+"category" in product
 ```
 
-Output
+returns:
 
 ```text
-Mango
+false
 ```
 
----
-
-```javascript
-console.log(fruits[2]);
-```
-
-Output
+So:
 
 ```text
-Banana
+in
+↓
+checks existence
+↓
+true / false
 ```
 
 ---
 
-# 🎯 Real-Life Analogy
+# 📝 Practice Questions
 
-Imagine a **train**.
+Answer these in detail like you've been doing.
 
-```
-Engine | Coach 1 | Coach 2 | Coach 3
-```
+### Basic
 
-JavaScript numbers the coaches like this:
+1. What is the `in` operator used for with Objects?
+2. Is `in` a method or an operator?
+3. What does `"name" in student` check?
+4. What does `in` return?
+5. What happens if the property exists?
+6. What happens if the property doesn't exist?
+7. How do you check whether `age` exists in `student`?
+8. How do you check whether `price` exists in `product`?
+9. Can we use a variable with the `in` operator?
+10. Does checking a property modify the Object?
 
-| Coach   | Index |
-| ------- | ----: |
-| Engine  |     0 |
-| Coach 1 |     1 |
-| Coach 2 |     2 |
-| Coach 3 |     3 |
+### Understanding
 
-To access Coach 2, JavaScript uses its **index**.
+11. What is `hasOwnProperty()` used for?
+12. What does `student.hasOwnProperty("age")` return?
+13. What does `student.hasOwnProperty("city")` return if city doesn't exist?
+14. What is the basic difference between `in` and `hasOwnProperty()`?
+15. Why is checking property existence useful instead of simply accessing the property?
 
-Arrays work the same way.
+### Real-world
+
+16. How would you check whether a product has a `brand` property?
+17. How would you check whether a patient has a `disease` property?
+18. How would you check whether a bank account has an `accountType` property?
+19. Give a real-world example where checking whether a property exists would be useful.
+20. Explain property existence checking in your own words.
 
 ---
 
-# 6. Common Mistakes
+# 🧠 MCQs
 
-### ❌ Mistake 1
-
-Using parentheses.
+### 1. What does this return?
 
 ```javascript
-let fruits = ("Apple", "Mango");
+"name" in student
 ```
 
-✅ Correct
+a) `"name"`
+b) true/false
+c) student name
+d) undefined
+
+### 2. Which is correct?
+
+a)
 
 ```javascript
-let fruits = ["Apple", "Mango"];
+student.in("name");
 ```
 
----
-
-### ❌ Mistake 2
-
-Forgetting commas.
+b)
 
 ```javascript
-["Apple" "Mango"]
+"name" in student;
 ```
 
-✅ Correct
+c)
 
 ```javascript
-["Apple", "Mango"]
+student -> "name";
 ```
 
----
-
-### ❌ Mistake 3
-
-Wrong index.
+d)
 
 ```javascript
-let fruits = ["Apple", "Mango"];
-
-console.log(fruits[2]);
+check student.name;
 ```
 
-Output
-
-```text
-undefined
-```
-
-Because only index **0** and **1** exist.
-
----
-
-# 7. Coding Assignments (10)
-
-Create **one file** named:
-
-**`exampleArrays.js`**
-
-### 1.
-
-Create an array of students.
+### 3. What does this do?
 
 ```javascript
-["John", "Rahul", "Priya", "Shagun"]
+student.hasOwnProperty("age")
 ```
 
-Print the entire array.
+a) Deletes age
+b) Updates age
+c) Checks whether age belongs directly to student
+d) Returns the age
 
----
-
-### 2.
-
-Create an array of fruits.
+### 4. If `city` doesn't exist, what does this return?
 
 ```javascript
-["Apple", "Mango", "Banana", "Orange"]
+"city" in student
 ```
 
-Print the entire array.
+a) true
+b) false
+c) null
+d) city
 
----
-
-### 3.
-
-Create an array of bank accounts.
+### 5. Which is useful for a dynamic property?
 
 ```javascript
-["ACC1001", "ACC1002", "ACC1003"]
+let key = "price";
 ```
 
-Print the array.
-
----
-
-### 4.
-
-Create an array of hospital patients.
+a)
 
 ```javascript
-["Rahul", "Amit", "Priya"]
+key in product
 ```
 
----
-
-### 5.
-
-Create an array of products.
+b)
 
 ```javascript
-["Laptop", "Mouse", "Keyboard"]
+product.key
 ```
 
----
-
-### 6.
-
-Create an array of cities.
+c)
 
 ```javascript
-["Delhi", "Mumbai", "Pune"]
+product.price.key
 ```
 
----
-
-### 7.
-
-Create an array containing different data types.
+d)
 
 ```javascript
-["John", 25, true]
+delete key
 ```
 
 ---
 
-### 8.
-
-Create an empty array.
-
-Print it.
-
----
-
-### 9.
-
-Print the **first fruit**.
-
-Expected Output:
-
-```text
-Apple
-```
-
----
-
-### 10.
-
-Print the **second student**.
-
-Expected Output:
-
-```text
-Rahul
-```
-
----
-
-# 8. Mini Project
+# 💻 Coding Practice
 
 Create:
 
-**`shoppingCart.js`**
+```text
+exampleObjectPropertyCheck.js
+```
 
-Store:
+Put **all 5 exercises in one file**, as we've been doing.
+
+---
+
+## Exercise 1 — Student 🎓
 
 ```javascript
-let cart = [
-    "Laptop",
-    "Mouse",
-    "Keyboard",
-    "Headphones"
-];
+let student = {
+    name: "Shagun",
+    age: 25,
+    course: "MERN"
+};
 ```
 
-Print:
+Check whether:
 
 ```text
-Shopping Cart:
-Laptop
-Mouse
-Keyboard
-Headphones
+name
+city
+course
 ```
 
-(Hint: Print each item using its index.)
+exist.
+
+Display:
+
+```text
+Student Property Check
+-------------------------
+Name exists: true
+City exists: false
+Course exists: true
+```
 
 ---
 
-# 9. Interview Questions
-
-## Beginner
-
-1. What is an array?
-2. Why do we use arrays?
-3. Which brackets are used to create an array?
-4. Can an array store multiple values?
-5. Can an array store different data types?
-
----
-
-## Intermediate
-
-6. What is an index in an array?
-7. From which index does a JavaScript array start?
-8. What is the index of the first element?
-9. What happens if we access an index that doesn't exist?
-10. Can an array be empty?
-
----
-
-## Advanced
-
-11. Is an array mutable or immutable?
-12. Can arrays contain other arrays?
-13. Can arrays contain objects?
-14. How do you access the third element?
-15. How do you access the last element if you know the array length?
-
----
-
-## Scenario-Based
-
-16. Why are arrays useful in a shopping website?
-17. Why are arrays useful in a hospital system?
-18. Give four real-world examples where arrays are used.
-19. Why are arrays important in React?
-20. Why are arrays important in APIs?
-
----
-
-# 10. MCQs
-
-### 1.
-
-An array is used to:
-
-A) Store one value
-
-B) Store multiple values
-
-C) Store only numbers
-
-D) Store only strings
-
----
-
-### 2.
-
-Which brackets are used for arrays?
-
-A) `()`
-
-B) `{}`
-
-C) `[]`
-
-D) `<>`
-
----
-
-### 3.
-
-What is the first index of an array?
-
-A) 1
-
-B) 0
-
-C) -1
-
-D) 10
-
----
-
-### 4.
-
-Output?
+## Exercise 2 — Product 🛒
 
 ```javascript
-let fruits = ["Apple", "Mango"];
-console.log(fruits[1]);
+let product = {
+    name: "Laptop",
+    price: 65000,
+    brand: "HP"
+};
 ```
 
-A)
+Check whether:
 
 ```text
-Apple
+price
+brand
+category
 ```
 
-B)
+exist.
 
-```text
-Mango
+Display the result.
+
+---
+
+## Exercise 3 — Patient 🏥
+
+```javascript
+let patient = {
+    id: "PAT101",
+    name: "Rahul",
+    age: 35,
+    roomNo: 205
+};
 ```
 
-C)
+Check whether:
 
 ```text
-undefined
+disease
+roomNo
+age
 ```
 
-D)
+exist.
+
+Use `if...else` and display a meaningful message.
+
+Example:
 
 ```text
-Error
+Disease information not available
+Room number available
+Age available
 ```
 
 ---
 
-### 5.
+## Exercise 4 — Bank Account 🏦
 
-Can arrays store different data types?
-
-A) No
-
-B) Yes
-
----
-
-# 11. Notes (`Arrays.md`)
-
-Add:
-
-```md
-# Arrays
-
-- Stores multiple values.
-- Uses square brackets [].
-- Index starts from 0.
-- Values are separated by commas.
-- Arrays can store different data types.
-- Arrays can be empty.
+```javascript
+let account = {
+    accountNo: "ACC1001",
+    customer: "Amit",
+    balance: 50000
+};
 ```
 
----
+Use `hasOwnProperty()` to check:
 
-# 12. Git Practice
-
-After completing everything:
-
-```bash
-git status
-git add .
-git commit -m "Completed JavaScript Arrays Introduction"
-git push
+```text
+accountNo
+balance
+accountType
 ```
 
+Display the results.
+
 ---
+
+## Exercise 5 — Dynamic Property ⭐⭐⭐
+
+This one is important.
+
+```javascript
+let product = {
+    name: "Laptop",
+    price: 65000,
+    brand: "HP"
+};
+
+let key = "price";
+```
+
+Use:
+
+```javascript
+key in product
+```
+
+to check whether the property exists.
+
+Then change:
+
+```javascript
+key = "category";
+```
+
+and check again.
+
+Expected idea:
+
+```text
+Property price exists: true
+Property category exists: false
+```

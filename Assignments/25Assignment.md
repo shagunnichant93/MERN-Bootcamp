@@ -360,3 +360,232 @@ delete key
 ```
 
 ---
+
+
+
+# 🧩 Output Prediction Questions
+
+### Question 1
+
+What is the output?
+
+```javascript
+let employee = {
+    name: "John",
+
+    job: {
+        department: "IT",
+        salary: 70000
+    }
+};
+
+console.log(employee.job.department);
+```
+
+**Answer:**
+
+```text
+IT
+```
+
+---
+
+### Question 2
+
+What is the output?
+
+```javascript
+let user = {
+    name: "Rahul",
+
+    address: {
+        city: "Delhi"
+    }
+};
+
+user.address.city = "Mumbai";
+
+console.log(user.address.city);
+```
+
+**Answer:**
+
+```text
+Mumbai
+```
+
+---
+
+### Question 3 🔥
+
+What is the output?
+
+```javascript
+let company = {
+    office: {
+        location: {
+            city: "Noida"
+        }
+    }
+};
+
+console.log(company.office.location.city);
+```
+
+**Answer:**
+
+```text
+Noida
+```
+
+---
+
+# ❓ MCQs
+
+Try answering these **without looking at the answers first**.
+
+### MCQ 1
+
+What is a nested object?
+
+**A.** An array inside an object
+**B.** An object inside another object
+**C.** A function inside an object
+**D.** A variable inside an object
+
+---
+
+### MCQ 2
+
+How do you access `city`?
+
+```javascript
+let user = {
+    address: {
+        city: "Delhi"
+    }
+};
+```
+
+**A.**
+
+```javascript
+user.city
+```
+
+**B.**
+
+```javascript
+user.address
+```
+
+**C.**
+
+```javascript
+user.address.city
+```
+
+**D.**
+
+```javascript
+user[city]
+```
+
+---
+
+### MCQ 3
+
+Which statement updates the city?
+
+```javascript
+let user = {
+    address: {
+        city: "Delhi"
+    }
+};
+```
+
+**A.**
+
+```javascript
+user.city = "Mumbai";
+```
+
+**B.**
+
+```javascript
+user.address.city = "Mumbai";
+```
+
+**C.**
+
+```javascript
+user.address = "Mumbai";
+```
+
+**D.**
+
+```javascript
+city.address.user = "Mumbai";
+```
+
+---
+
+### MCQ 4
+
+What will this print?
+
+```javascript
+let product = {
+    details: {
+        price: 500
+    }
+};
+
+console.log(product.details.price);
+```
+
+**A.** `details`
+**B.** `price`
+**C.** `500`
+**D.** `undefined`
+
+---
+
+### MCQ 5 🔥
+
+Which statement correctly deletes the `city` property?
+
+```javascript
+let user = {
+    address: {
+        city: "Delhi"
+    }
+};
+```
+
+**A.**
+
+```javascript
+delete user.city;
+```
+
+**B.**
+
+```javascript
+delete city;
+```
+
+**C.**
+
+```javascript
+delete user.address.city;
+```
+
+**D.**
+
+```javascript
+user.delete.address.city;
+```
+
+---
