@@ -589,3 +589,64 @@ user.delete.address.city;
 ```
 
 ---
+
+
+---
+
+# 🎯 MCQs
+
+### 1. What does `Object.keys()` return?
+
+**a)** Object
+**b)** String
+**c)** Array
+**d)** Boolean
+
+### 2. What will this return?
+
+```javascript
+let student = {
+    name: "Shagun",
+    age: 25
+};
+
+Object.keys(student);
+```
+
+**a)** `["Shagun", 25]`
+**b)** `["name", "age"]`
+**c)** `{name, age}`
+**d)** `"name, age"`
+
+### 3. Which is the correct syntax?
+
+**a)** `student.keys()`
+**b)** `keys.student()`
+**c)** `Object.keys(student)`
+**d)** `student.Object.keys()`
+
+### 4. What does this return?
+
+```javascript
+Object.keys({}).length
+```
+
+**a)** `undefined`
+**b)** `0`
+**c)** `1`
+**d)** `false`
+
+### 5. What does this code do?
+
+```javascript
+Object.keys(student).forEach((key) => {
+    console.log(student[key]);
+});
+```
+
+**a)** Prints only keys
+**b)** Prints only values
+**c)** Deletes the properties
+**d)** Updates the properties
+
+---

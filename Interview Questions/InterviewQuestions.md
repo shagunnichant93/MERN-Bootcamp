@@ -2163,3 +2163,174 @@ user.address.city = "Mumbai";
 ```
 
 ---
+
+---
+
+# 📝 Practice Questions
+
+Now answer these **20 detailed questions**, just like we've been doing for the previous topics.
+
+### Q1.
+
+What is `Object.keys()`? Explain in your own words.
+
+### Q2.
+
+Is `Object.keys()` a method, operator, or keyword?
+
+### Q3.
+
+What does `Object.keys()` return?
+
+### Q4.
+
+Write the general syntax of `Object.keys()`.
+
+### Q5.
+
+Given:
+
+```javascript
+let student = {
+    name: "Shagun",
+    age: 25,
+    course: "MERN"
+};
+```
+
+What will this return?
+
+```javascript
+Object.keys(student);
+```
+
+### Q6.
+
+Does `Object.keys()` return an Object or an Array?
+
+### Q7.
+
+What will be the output?
+
+```javascript
+let product = {
+    name: "Laptop",
+    price: 65000
+};
+
+console.log(Object.keys(product));
+```
+
+### Q8.
+
+What will happen if we use `Object.keys()` on an empty Object?
+
+```javascript
+let student = {};
+
+console.log(Object.keys(student));
+```
+
+### Q9.
+
+What will this return?
+
+```javascript
+Object.keys(student).length
+```
+
+if the Object has 5 properties?
+
+### Q10.
+
+Does `Object.keys()` modify the original Object?
+
+### Q11.
+
+What is the difference between:
+
+```javascript
+Object.keys(student)
+```
+
+and:
+
+```javascript
+Object.values(student)
+```
+
+### Q12.
+
+Why does `Object.keys()` return an Array?
+
+### Q13.
+
+Can we use `forEach()` on the result of `Object.keys()`? Explain why.
+
+### Q14.
+
+What will this code print?
+
+```javascript
+let student = {
+    name: "Shagun",
+    age: 25
+};
+
+Object.keys(student).forEach((key) => {
+    console.log(key);
+});
+```
+
+### Q15.
+
+How can you get the value of a property when you have its key stored in a variable?
+
+For example:
+
+```javascript
+let key = "name";
+```
+
+How would you get `"Shagun"` from:
+
+```javascript
+let student = {
+    name: "Shagun"
+};
+```
+
+### Q16.
+
+How would you count the total number of properties in a product Object?
+
+### Q17.
+
+Give one real-world example where `Object.keys()` could be useful for a product.
+
+### Q18.
+
+Give one real-world example where `Object.keys()` could be useful in a hospital/API application.
+
+### Q19.
+
+Explain this code step-by-step:
+
+```javascript
+Object.keys(student).forEach((key) => {
+    console.log(`${key}: ${student[key]}`);
+});
+```
+
+### Q20.
+
+In your own words, explain the difference between:
+
+```javascript
+Object.keys()
+```
+
+and:
+
+```javascript
+Object.values()
