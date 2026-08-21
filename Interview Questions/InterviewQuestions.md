@@ -2334,3 +2334,250 @@ and:
 
 ```javascript
 Object.values()
+
+
+---
+
+# 📝 Practice Questions
+
+Answer these in detail, just like you've been doing for the previous topics.
+
+### 1.
+
+What is `Object.entries()`?
+
+### 2.
+
+Is `Object.entries()` a method or operator?
+
+### 3.
+
+What does `Object.entries()` return?
+
+### 4.
+
+What is the syntax of `Object.entries()`?
+
+### 5.
+
+What does each inner array contain?
+
+### 6.
+
+What will be the output?
+
+```javascript
+let student = {
+    name: "Shagun",
+    age: 25
+};
+
+console.log(Object.entries(student));
+```
+
+### 7.
+
+What is the difference between `Object.keys()` and `Object.entries()`?
+
+### 8.
+
+What is the difference between `Object.values()` and `Object.entries()`?
+
+### 9.
+
+What will this return?
+
+```javascript
+let product = {};
+
+console.log(Object.entries(product));
+```
+
+### 10.
+
+Does `Object.entries()` modify the original object?
+
+### 11.
+
+Why can we use `forEach()` with `Object.entries()`?
+
+### 12.
+
+What does this code do?
+
+```javascript
+Object.entries(student).forEach((entry) => {
+    console.log(entry);
+});
+```
+
+### 13.
+
+What does `[key, value]` represent when using:
+
+```javascript
+Object.entries(student).forEach(([key, value]) => {
+});
+```
+
+### 14.
+
+What will be the output?
+
+```javascript
+let student = {
+    name: "Shagun",
+    age: 25
+};
+
+Object.entries(student).forEach(([key, value]) => {
+    console.log(`${key}: ${value}`);
+});
+```
+
+### 15.
+
+Why is `Object.entries()` useful when we need both property names and their values?
+
+### 16.
+
+How can `Object.entries()` be useful for displaying product information?
+
+### 17.
+
+How can it be useful for displaying patient information?
+
+### 18.
+
+How can it be useful for displaying bank account information?
+
+### 19.
+
+How can `Object.entries()` be useful when working with API data?
+
+### 20.
+
+Explain the difference between:
+
+```text
+Object.keys()
+Object.values()
+Object.entries()
+```
+
+in your own words.
+
+---
+
+# 📝 Practice Questions
+
+### 1.
+
+What is `Object.values()`?
+
+### 2.
+
+Is `Object.values()` a method or operator?
+
+### 3.
+
+What does `Object.values()` return?
+
+### 4.
+
+Write the syntax of `Object.values()`.
+
+### 5.
+
+What will be the output?
+
+```javascript
+let student = {
+    name: "Shagun",
+    age: 25,
+    course: "MERN"
+};
+
+console.log(Object.values(student));
+```
+
+### 6.
+
+Does `Object.values()` return an Object or Array?
+
+### 7.
+
+What is the difference between `Object.keys()` and `Object.values()`?
+
+### 8.
+
+What will this return?
+
+```javascript
+let product = {};
+
+console.log(Object.values(product));
+```
+
+### 9.
+
+How can you find the number of values in an object?
+
+### 10.
+
+Does `Object.values()` modify the original object?
+
+### 11.
+
+Why can we use `forEach()` with the result of `Object.values()`?
+
+### 12.
+
+What will this print?
+
+```javascript
+let student = {
+    name: "Shagun",
+    age: 25
+};
+
+Object.values(student).forEach((value) => {
+    console.log(value);
+});
+```
+
+### 13.
+
+Can `Object.values()` contain different data types?
+
+Explain with an example.
+
+### 14.
+
+What will `Object.values()` return if an object has 5 properties?
+
+### 15.
+
+Explain `Object.values()` using a real-world student example.
+
+### 16.
+
+How can `Object.values()` be useful with product information?
+
+### 17.
+
+How can `Object.values()` be useful with patient information?
+
+### 18.
+
+How can `Object.values()` be useful with bank account information?
+
+### 19.
+
+Why is it useful that `Object.values()` returns an Array?
+
+### 20.
+
+Explain the difference between `Object.keys()`, `Object.values()`, and normal object access in your own words.
+
+---

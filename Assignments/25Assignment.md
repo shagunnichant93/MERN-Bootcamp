@@ -650,3 +650,119 @@ Object.keys(student).forEach((key) => {
 **d)** Updates the properties
 
 ---
+
+
+
+# 🎯 MCQs
+
+### 1. What does `Object.entries()` return?
+
+a) Object
+b) String
+c) Array
+d) Boolean
+
+### 2. What does each entry contain?
+
+a) Only key
+b) Only value
+c) Key and value
+d) Only index
+
+### 3. What is the output?
+
+```javascript
+let student = {
+    name: "Shagun",
+    age: 25
+};
+
+console.log(Object.entries(student));
+```
+
+a)
+
+```text
+["name", "age"]
+```
+
+b)
+
+```text
+["Shagun", 25]
+```
+
+c)
+
+```text
+[
+    ["name", "Shagun"],
+    ["age", 25]
+]
+```
+
+d) `25`
+
+### 4. Can we use `forEach()` on the result of `Object.entries()`?
+
+a) Yes
+b) No
+c) Only with strings
+d) Only with numbers
+
+### 5. Which method gives key + value together?
+
+a) `Object.keys()`
+b) `Object.values()`
+c) `Object.entries()`
+d) `Object.get()`
+
+
+
+# 🎯 MCQs
+
+**1. What does `Object.values()` return?**
+
+a) Object
+b) String
+c) Array
+d) Boolean
+
+**2. Which gets the values of an object?**
+
+a) `Object.keys()`
+b) `Object.values()`
+c) `Object.value()`
+d) `Object.get()`
+
+**3. What is the output?**
+
+```javascript
+let student = {
+    name: "Shagun",
+    age: 25
+};
+
+console.log(Object.values(student));
+```
+
+a) `["name", "age"]`
+b) `["Shagun", 25]`
+c) `{name, age}`
+d) `25`
+
+**4. Can we use `.length` on the result of `Object.values()`?**
+
+a) Yes
+b) No
+c) Only for strings
+d) Only for numbers
+
+**5. Does `Object.values()` modify the original object?**
+
+a) Yes
+b) No
+c) Sometimes
+d) Only when numbers are present
+
+---
