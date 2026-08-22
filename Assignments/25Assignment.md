@@ -766,3 +766,60 @@ c) Sometimes
 d) Only when numbers are present
 
 ---
+
+---
+
+# 🎯 MCQs
+
+### 1. What is `Object.assign()` mainly used for?
+
+a) Deleting objects
+b) Copying and merging properties
+c) Sorting objects
+d) Filtering objects
+
+### 2. Which object receives the properties?
+
+a) Source
+b) Target
+c) Both always
+d) Neither
+
+### 3. What happens when the same property exists in two sources?
+
+a) Error occurs
+b) First value always wins
+c) Later value overwrites the earlier value
+d) Both values are stored
+
+### 4. What does `Object.assign()` return?
+
+a) Array
+b) String
+c) Target object
+d) Boolean
+
+### 5. What happens here?
+
+```javascript
+let a = {
+    age: 25
+};
+
+let b = {
+    age: 30
+};
+
+let result = {};
+
+Object.assign(result, a, b);
+```
+
+What is `result.age`?
+
+a) 25
+b) 30
+c) undefined
+d) Error
+
+---

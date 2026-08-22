@@ -2581,3 +2581,120 @@ Why is it useful that `Object.values()` returns an Array?
 Explain the difference between `Object.keys()`, `Object.values()`, and normal object access in your own words.
 
 ---
+
+
+---
+
+# 📝 Practice Questions
+
+Answer these in detail like our previous topics.
+
+### 1.
+
+What is `Object.assign()`?
+
+### 2.
+
+Is `Object.assign()` a method or operator?
+
+### 3.
+
+What is the main purpose of `Object.assign()`?
+
+### 4.
+
+Write the basic syntax of `Object.assign()`.
+
+### 5.
+
+What is a target object?
+
+### 6.
+
+What is a source object?
+
+### 7.
+
+Which object receives the copied properties — target or source?
+
+### 8.
+
+Does `Object.assign()` return an object or an array?
+
+### 9.
+
+What happens if two source objects have the same property?
+
+### 10.
+
+Which value wins when the same property exists in multiple source objects?
+
+### 11.
+
+Does `Object.assign()` remove properties from the source object?
+
+### 12.
+
+What will be the output?
+
+```javascript
+let student = {
+    name: "Shagun",
+    age: 25
+};
+
+let copy = {};
+
+Object.assign(copy, student);
+
+console.log(copy);
+```
+
+### 13.
+
+What will happen here?
+
+```javascript
+let student = {
+    name: "Shagun"
+};
+
+let details = {
+    age: 25
+};
+
+Object.assign(student, details);
+
+console.log(student);
+```
+
+### 14.
+
+What happens to the target object when `Object.assign()` is used with the target directly?
+
+### 15.
+
+Can `Object.assign()` merge more than two objects?
+
+### 16.
+
+How can `Object.assign()` be used with product information?
+
+### 17.
+
+How can it be used with patient information?
+
+### 18.
+
+How can it be used with bank account information?
+
+### 19.
+
+Why is `Object.assign()` useful in real-world applications?
+
+### 20.
+
+Explain this in your own words:
+
+```javascript
+Object.assign(target, source1, source2);
