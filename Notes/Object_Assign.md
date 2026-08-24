@@ -1008,7 +1008,3 @@ Name: Shagun
 Age: 30
 Course: MERN
 ```
-
-Pay special attention to **why age becomes 30 instead of 25**.
-
-Send your **20 answers + 5 MCQs + coding output**, and I'll check them carefully in the same format as before.

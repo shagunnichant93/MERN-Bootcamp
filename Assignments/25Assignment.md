@@ -823,3 +823,65 @@ c) undefined
 d) Error
 
 ---
+
+# MCQs
+
+### 1. What does object destructuring do?
+
+A. Deletes properties
+
+B. Extracts properties into variables
+
+C. Merges objects
+
+D. Converts an object into an array
+
+### 2. Which is correct?
+
+A. `let [name] = student`
+
+B. `let (name) = student`
+
+C. `let { name } = student`
+
+D. `let <name> = student`
+
+### 3. What will this produce?
+
+`let student = { name: "Shagun", age: 25 };`
+
+`let { name } = student;`
+
+A. `student`
+
+B. `"name"`
+
+C. `"Shagun"`
+
+D. `undefined`
+
+### 4. How do you rename `name` to `studentName`?
+
+A. `let { studentName = name } = student`
+
+B. `let { name: studentName } = student`
+
+C. `let { name -> studentName } = student`
+
+D. `let { name as studentName } = student`
+
+### 5. What happens here?
+
+`let { city = "Delhi" } = student;`
+
+If `city` doesn't exist
+
+A. Error
+
+B. `undefined`
+
+C. `"Delhi"`
+
+D. `null`
+
+---

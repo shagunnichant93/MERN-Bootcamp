@@ -2698,3 +2698,39 @@ Explain this in your own words:
 
 ```javascript
 Object.assign(target, source1, source2);
+
+---
+
+# Interview Questions
+
+### Basic
+
+1. What is object destructuring?
+
+2. Why do we use object destructuring?
+
+3. What syntax is used for object destructuring?
+
+4. Can we extract only selected properties?
+
+5. Can we rename variables during destructuring?
+
+### Advanced
+
+6. How do you provide a default value during destructuring?
+
+7. What happens if the property doesn't exist?
+
+8. Does destructuring modify the original object?
+
+9. What is the difference between destructuring and property access?
+
+### Scenario Based
+
+10. You receive a user object from an API containing 10 properties, but you only need `name` and `email`. How would you extract them?
+
+11. An API sometimes doesn't provide `city`. How can you give `Delhi` as the default city while destructuring?
+
+12. Your object has a property called `name`, but you want your local variable to be called `customerName`. How would you do that?
+
+---
