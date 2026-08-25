@@ -1022,3 +1022,679 @@ user → address → city
 
 user.address.city
 ```
+Absolutely. Since you want to move on, we'll continue with the **next topic after Nested Object Destructuring**.
+
+# JavaScript Objects — Topic 14
+
+# Nested Objects
+
+You have already worked with nested objects while learning nested destructuring. Now we'll properly understand **nested objects themselves**, because they are extremely common in real applications and API responses.
+
+---
+
+# 1. What is a Nested Object?
+
+A nested object is simply an **object inside another object**.
+
+Example
+
+`let student = { name: "Shagun", age: 25, address: { city: "Delhi", state: "UP" } };`
+
+Here
+
+`student` is the main object.
+
+`address` is another object inside `student`.
+
+So the structure is
+
+`student`
+
+`→ name`
+
+`→ age`
+
+`→ address`
+
+`   → city`
+
+`   → state`
+
+---
+
+# 2. Why Do We Need Nested Objects?
+
+Suppose we want to store student information.
+
+Without nesting, we could write
+
+`let student = { name: "Shagun", age: 25, city: "Delhi", state: "UP" };`
+
+This works.
+
+But imagine a real student has
+
+Personal information
+
+`name`
+
+`age`
+
+`gender`
+
+Address information
+
+`city`
+
+`state`
+
+`country`
+
+Contact information
+
+`phone`
+
+`email`
+
+It becomes easier to organize related information into separate objects.
+
+Example
+
+`let student = { name: "Shagun", age: 25, address: { city: "Delhi", state: "UP", country: "India" }, contact: { phone: "9876543210", email: "shagun@example.com" } };`
+
+Now the data is organized.
+
+---
+
+# 3. Real-Life Analogy
+
+Think about a person's application form.
+
+The main form contains
+
+`Personal Details`
+
+`Address`
+
+`Contact Details`
+
+Each section contains its own information.
+
+JavaScript represents this naturally using nested objects.
+
+`student`
+
+↓
+
+`personal`
+
+`address`
+
+`contact`
+
+Each section can itself be an object.
+
+---
+
+# 4. Accessing Nested Properties
+
+Suppose
+
+`let student = { name: "Shagun", address: { city: "Delhi", state: "UP" } };`
+
+To access name
+
+`console.log(student.name);`
+
+Output
+
+`Shagun`
+
+To access city
+
+`console.log(student.address.city);`
+
+Output
+
+`Delhi`
+
+To access state
+
+`console.log(student.address.state);`
+
+Output
+
+`UP`
+
+The pattern is
+
+`object.property.property`
+
+---
+
+# 5. Three-Level Nested Object
+
+Objects can be nested more deeply.
+
+Example
+
+`let company = { name: "ABC Technologies", address: { location: { city: "Delhi", state: "UP" } } };`
+
+To access city
+
+`console.log(company.address.location.city);`
+
+Output
+
+`Delhi`
+
+Here
+
+`company`
+
+contains `address`
+
+`address` contains `location`
+
+`location` contains `city`
+
+---
+
+# 6. Student Example
+
+`let student = { name: "Shagun", age: 25, course: "MERN", address: { city: "Delhi", state: "UP", pincode: 201001 } };`
+
+Access city
+
+`console.log(student.address.city);`
+
+Access state
+
+`console.log(student.address.state);`
+
+Access pincode
+
+`console.log(student.address.pincode);`
+
+---
+
+# 7. Product Example
+
+A product can contain supplier information.
+
+`let product = { name: "Laptop", price: 65000, brand: "HP", supplier: { name: "ABC Electronics", city: "Delhi", contact: "9876543210" } };`
+
+Access supplier name
+
+`console.log(product.supplier.name);`
+
+Access supplier city
+
+`console.log(product.supplier.city);`
+
+Access supplier contact
+
+`console.log(product.supplier.contact);`
+
+---
+
+# 8. Patient Example
+
+A patient can have nested contact information.
+
+`let patient = { id: "PAT101", name: "Rahul", age: 35, medical: { disease: "Fever", roomNo: 205 }, emergencyContact: { name: "Amit", phone: "9876543210" } };`
+
+Access disease
+
+`console.log(patient.medical.disease);`
+
+Access room number
+
+`console.log(patient.medical.roomNo);`
+
+Access emergency contact name
+
+`console.log(patient.emergencyContact.name);`
+
+---
+
+# 9. Bank Account Example
+
+`let account = { accountNo: "ACC1001", balance: 50000, customer: { name: "Amit", age: 35, address: { city: "Delhi", state: "UP" } } };`
+
+Access customer name
+
+`console.log(account.customer.name);`
+
+Access customer city
+
+`console.log(account.customer.address.city);`
+
+Notice the chain
+
+`account`
+
+→ `customer`
+
+→ `address`
+
+→ `city`
+
+---
+
+# 10. Updating Nested Properties
+
+Nested properties can also be updated.
+
+Example
+
+`let student = { name: "Shagun", address: { city: "Delhi", state: "UP" } };`
+
+Update city
+
+`student.address.city = "Mumbai";`
+
+Now
+
+`console.log(student.address.city);`
+
+Output
+
+`Mumbai`
+
+The nested object is mutable just like a normal object.
+
+---
+
+# 11. Adding Nested Properties
+
+Suppose
+
+`let student = { name: "Shagun", address: { city: "Delhi" } };`
+
+We can add pincode
+
+`student.address.pincode = 201001;`
+
+Now address becomes
+
+`{ city: "Delhi", pincode: 201001 }`
+
+---
+
+# 12. Deleting Nested Properties
+
+Suppose
+
+`let student = { name: "Shagun", address: { city: "Delhi", state: "UP", pincode: 201001 } };`
+
+Delete state
+
+`delete student.address.state;`
+
+Now address becomes
+
+`{ city: "Delhi", pincode: 201001 }`
+
+---
+
+# 13. Nested Objects in API Data
+
+This is where this topic becomes very important.
+
+An API response may look like
+
+`{ id: 101, name: "Shagun", profile: { email: "shagun@example.com", address: { city: "Delhi", country: "India" } } }`
+
+To get the city
+
+`user.profile.address.city`
+
+You will see this type of structure frequently in MERN applications.
+
+---
+
+# 14. Nested Object vs Array of Objects
+
+Don't confuse these.
+
+Nested object
+
+`let student = { name: "Shagun", address: { city: "Delhi" } };`
+
+This is **one object containing another object**.
+
+Array of objects
+
+`let students = [ { name: "Shagun" }, { name: "Rahul" } ];`
+
+This is **an array containing multiple objects**.
+
+Both are common in API responses.
+
+---
+
+# 15. Memory Diagram
+
+Remember
+
+`student`
+
+`│`
+
+`├── name`
+
+`├── age`
+
+`└── address`
+
+`    │`
+
+`    ├── city`
+
+`    ├── state`
+
+`    └── pincode`
+
+To reach pincode
+
+`student.address.pincode`
+
+Think
+
+**Start → Go inside → Go inside again → Get value**
+
+---
+
+# 16. Important Difference
+
+Normal object
+
+`student.name`
+
+Nested object
+
+`student.address.city`
+
+Deeper nested object
+
+`student.address.location.city`
+
+The more levels you have, the longer the property chain becomes.
+
+This is one reason we'll later learn **Optional Chaining**.
+
+---
+
+# Practice Coding
+
+Create
+
+`exampleNestedObjects.js`
+
+## Exercise 1 — Student
+
+Create a student object containing
+
+`name`
+
+`age`
+
+`course`
+
+`address`
+
+Inside address
+
+`city`
+
+`state`
+
+`pincode`
+
+Display
+
+`name`
+
+`city`
+
+`state`
+
+`pincode`
+
+---
+
+## Exercise 2 — Product
+
+Create a product containing
+
+`name`
+
+`price`
+
+`brand`
+
+`supplier`
+
+Inside supplier
+
+`name`
+
+`city`
+
+`phone`
+
+Display all supplier information.
+
+---
+
+## Exercise 3 — Patient
+
+Create a patient containing
+
+`id`
+
+`name`
+
+`age`
+
+`medical`
+
+Inside medical
+
+`disease`
+
+`roomNo`
+
+Display patient name, disease, and room number.
+
+---
+
+## Exercise 4 — Bank Account
+
+Create an account containing
+
+`accountNo`
+
+`balance`
+
+`customer`
+
+Inside customer
+
+`name`
+
+`address`
+
+Inside address
+
+`city`
+
+`state`
+
+Display account number, customer name, city, and state.
+
+---
+
+## Exercise 5 — Update Nested Data
+
+Create
+
+`let student = { name: "Shagun", address: { city: "Delhi", state: "UP" } };`
+
+Change city from Delhi to Mumbai.
+
+Then display the complete student object.
+
+---
+
+# Assignment
+
+Create a `company` object.
+
+It should contain
+
+`name`
+
+`department`
+
+`manager`
+
+`location`
+
+Inside manager
+
+`name`
+
+`experience`
+
+Inside location
+
+`city`
+
+`state`
+
+`country`
+
+Display
+
+Company name
+
+Manager name
+
+Manager experience
+
+City
+
+State
+
+Country
+
+---
+
+# Interview Questions
+
+### Basic
+
+1. What is a nested object?
+
+2. Why do we use nested objects?
+
+3. How do you access a property inside a nested object?
+
+4. Can a nested object contain another nested object?
+
+### Advanced
+
+5. How do you update a nested property?
+
+6. How do you add a property to a nested object?
+
+7. How do you delete a nested property?
+
+8. What is the difference between a nested object and an array of objects?
+
+### Scenario Based
+
+9. An API returns user information with an `address` object containing `city` and `state`. How would you access the city?
+
+10. A customer object contains an `address` object, which contains a `location` object, which contains `city`. How would you access the city?
+
+---
+
+# MCQs
+
+### 1. Which is a nested object?
+
+A. `let student = "Shagun"`
+
+B. `let student = [10, 20]`
+
+C. `let student = { address: { city: "Delhi" } }`
+
+D. `let student = 25`
+
+### 2. How do you access city?
+
+Given
+
+`student.address.city`
+
+A. `student.city`
+
+B. `student.address.city`
+
+C. `student.address`
+
+D. `student["city"]`
+
+### 3. How do you update a nested city?
+
+A. `student.city = "Mumbai"`
+
+B. `student.address = "Mumbai"`
+
+C. `student.address.city = "Mumbai"`
+
+D. `student["address.city"] = "Mumbai"`
+
+### 4. What is this?
+
+`students = [ { name: "Shagun" }, { name: "Rahul" } ]`
+
+A. Nested object
+
+B. Array of objects
+
+C. Object of arrays
+
+D. String
+
+### 5. What does this access?
+
+`account.customer.address.city`
+
+A. Account number
+
+B. Customer
+
+C. Address
+
+D. City
+
+---
+
+## GitHub
+
+After completing the exercises, run
+
+`node exampleNestedObjects.js`
+
+Then send me:
+
+1. Your 10 theory answers
+2. MCQ answers
+3. Complete code
+4. Terminal output
+
+I'll check everything carefully before we move to **Optional Chaining `?.`**.
