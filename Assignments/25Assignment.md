@@ -885,3 +885,61 @@ C. `"Delhi"`
 D. `null`
 
 ---
+
+# MCQs
+
+### 1. What does `?.` represent?
+
+A. Spread operator
+
+B. Optional chaining
+
+C. Destructuring
+
+D. Rest operator
+
+### 2. What happens here?
+
+`let user = { name: "Shagun" };`
+
+`console.log(user?.address?.city);`
+
+A. Error
+
+B. `null`
+
+C. `undefined`
+
+D. `"Delhi"`
+
+### 3. Which is safer when `address` may not exist?
+
+A. `user.address.city`
+
+B. `user.address?.city`
+
+C. `user.address-city`
+
+D. `user.address!city`
+
+### 4. Does optional chaining automatically give a default value?
+
+A. Yes
+
+B. No
+
+C. Only for strings
+
+D. Only for arrays
+
+### 5. Which is valid optional chaining with an array?
+
+A. `students?.[0]`
+
+B. `students.?[0]`
+
+C. `students[?.0]`
+
+D. `students?.0`
+
+---

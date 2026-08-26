@@ -2734,3 +2734,35 @@ Object.assign(target, source1, source2);
 12. Your object has a property called `name`, but you want your local variable to be called `customerName`. How would you do that?
 
 ---
+
+---
+
+# Interview Questions
+
+### Basic
+
+1. What is optional chaining?
+
+2. What symbol is used for optional chaining?
+
+3. What happens when the property doesn't exist?
+
+4. What is the difference between `.` and `?.`?
+
+### Advanced
+
+5. Can optional chaining be used with nested objects?
+
+6. Can optional chaining be used with arrays?
+
+7. Can optional chaining be used with function calls?
+
+8. Does optional chaining provide a default value?
+
+### Scenario Based
+
+9. An API sometimes doesn't return `address`. How would you safely access `user.address.city`?
+
+10. A React component receives an object where `profile` may be missing. How would you safely display the user's city?
+
+---
