@@ -2766,3 +2766,33 @@ Object.assign(target, source1, source2);
 10. A React component receives an object where `profile` may be missing. How would you safely display the user's city?
 
 ---
+
+---
+
+# Interview Questions
+
+### Basic
+
+1. What is `Object.freeze()`?
+
+2. What happens when an object is frozen?
+
+3. Can we add a property to a frozen object?
+
+4. Can we delete a property from a frozen object?
+
+5. Can we update a property of a frozen object?
+
+### Advanced
+
+6. What does `Object.isFrozen()` do?
+
+7. Does `Object.freeze()` perform a shallow or deep freeze?
+
+8. Can a nested object still be modified after freezing the parent object?
+
+9. What is the difference between `const` and `Object.freeze()`?
+
+### Scenario Based
+
+10. You have application configuration that must never be modified accidentally. Which JavaScript feature could you use?

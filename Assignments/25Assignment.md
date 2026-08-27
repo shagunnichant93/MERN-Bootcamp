@@ -943,3 +943,67 @@ C. `students[?.0]`
 D. `students?.0`
 
 ---
+
+---
+
+# MCQs
+
+### 1. What does `Object.freeze()` do?
+
+A. Deletes an object
+
+B. Makes an object immutable
+
+C. Copies an object
+
+D. Converts an object into an array
+
+### 2. Can we add a property after freezing?
+
+A. Yes
+
+B. No
+
+C. Only strings
+
+D. Only numbers
+
+### 3. What does `Object.isFrozen()` return?
+
+A. Object
+
+B. String
+
+C. Boolean
+
+D. Array
+
+### 4. Is `Object.freeze()` deep by default?
+
+A. Yes
+
+B. No
+
+C. Only for arrays
+
+D. Only for strings
+
+### 5. What happens here?
+
+```text
+const student = {
+    age: 25
+};
+
+student.age = 30;
+```
+
+A. Error always
+
+B. Age becomes 30
+
+C. Object is frozen
+
+D. Student becomes undefined
+
+---
