@@ -2796,3 +2796,36 @@ Object.assign(target, source1, source2);
 ### Scenario Based
 
 10. You have application configuration that must never be modified accidentally. Which JavaScript feature could you use?
+
+
+---
+
+# Interview Questions
+
+### Basic
+
+1. What is `Object.seal()`?
+
+2. Can you add properties to a sealed object?
+
+3. Can you delete properties from a sealed object?
+
+4. Can you update existing properties in a sealed object?
+
+5. What does `Object.isSealed()` return?
+
+### Advanced
+
+6. What is the difference between `Object.seal()` and `Object.freeze()`?
+
+7. Is `Object.seal()` deep or shallow?
+
+8. Can a nested object be modified after the parent object is sealed?
+
+### Scenario Based
+
+9. You want to prevent users from adding or deleting fields from an object, but you still want to allow existing values to change. Which method would you use?
+
+10. You have a bank account object where the account structure should remain fixed but the balance should change. Would `seal()` or `freeze()` be more appropriate?
+
+---

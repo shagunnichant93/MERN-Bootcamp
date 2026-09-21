@@ -1007,3 +1007,59 @@ C. Object is frozen
 D. Student becomes undefined
 
 ---
+
+
+
+# MCQs
+
+### 1. What does `Object.seal()` prevent?
+
+A. Only updating
+
+B. Adding and deleting properties
+
+C. Reading properties
+
+D. Calling methods
+
+### 2. Can an existing property be updated after sealing?
+
+A. Yes
+
+B. No
+
+C. Only strings
+
+D. Only numbers
+
+### 3. Which method checks whether an object is sealed?
+
+A. `Object.checkSeal()`
+
+B. `Object.isSealed()`
+
+C. `Object.sealed()`
+
+D. `Object.check()`
+
+### 4. Which statement is correct?
+
+A. `freeze()` allows adding properties
+
+B. `seal()` allows deleting properties
+
+C. `seal()` allows updating existing properties
+
+D. `seal()` makes nested objects automatically frozen
+
+### 5. Which provides stronger protection?
+
+A. `Object.seal()`
+
+B. `Object.freeze()`
+
+C. `const`
+
+D. `Object.keys()`
+
+---
