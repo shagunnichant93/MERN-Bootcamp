@@ -26,13 +26,6 @@
 # MERN Bootcamp
 
 Welcome to my MERN Stack learning journey.
-
-## About Me
-
-- Name: Shagun
-- Experience: Aspiring MERN Full-Stack Developer | Building scalable web apps & API | React • Node.js • JavaScript • Git.
-- Goal: Become a Full Stack MERN Developer with AI integration.
-
 ---
 
 ## Repository Structure
