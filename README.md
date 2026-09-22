@@ -48,14 +48,14 @@ MERN-Bootcamp
 
 ## Learning Progress
 
-- ✅ Day 1 - Introduction
+- ✅ Introduction
 - ✅ JavaScript Setup
 - ✅ First JavaScript Program
 - ✅ Variables
 - ✅ Data Types
 - ✅ Functions
-- ⏳ Objects
-- ⏳ Arrays
+- ✅ Objects
+- ✅ Arrays
 - ⏳ Node.js
 - ⏳ Express
 - ⏳ MongoDB
